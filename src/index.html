@@ -16,9 +16,12 @@
     <header>
         
         <nav class="nav"> 
-            <svg class="nav__svg" width="1000" height="200" viewbox="0 0 1920 375">
+            <svg class="nav__svg-large" width="1000" height="200" viewbox="0 0 1920 375">
                 <path class="arch" d="M0 -3H1920V136.508 C 1150 
            136 381.5 100 0 367 V -3 Z" fill="white"></path>
+            </svg>
+            <svg class="nav__svg-small" width="640" height="283" viewbox="0 0 640 283">
+                <path class="arch" d="M 0 0 H 640 V 103.689 C 383.333 103.689 127.167 78.4426 0 275 V 0 Z" fill="white"></path>
             </svg>
             <a class="nav__logo-link" href="#">
                 <img class="nav__logo" src="./images/platypus_adventures_logo.svg"  alt="platypus with walking stick in a rainbow gradient circle"/>
@@ -27,12 +30,12 @@
                 <div class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav__list-item">
-                            <a href="#" class="nav__list-link">Our Work</a>
+                            <a href="#" class="nav__list-link">Our Work</a> 
                             <ul class="nav__dropdown">
                                 <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Tri My Best</a></li>
                                 <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Yoga</a></li>
                             </ul>
-                            <div class="nav__dropdown-shadow"></div>
+                            <div class="nav__dropdown-shadow" id="work-shadow"></div>
                         </li>
                         <li class="nav__list-item"><a href="#" class="nav__list-link">Our Stories</a></li>
                         <li class="nav__list-item"><a href="#" class="nav__list-link">About Us</a>  
@@ -40,6 +43,7 @@
                                 <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Our Mission and Values</a></li>
                                 <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Our Leadership</a></li> 
                             </ul>
+                            <div class="nav__dropdown-shadow" id="about-shadow"></div>
                         </li>
                         <li class="nav__list-item"><a href="#" class="nav__list-link">Get Involved</a>
                             <ul class="nav__dropdown">
@@ -47,11 +51,10 @@
                                 <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Fundraising</a></li> 
                                 <li class="nav__dropdown-item"><a href="#" class="nav__dropdown-link">Donating</a></li> 
                             </ul>
+                            <div class="nav__dropdown-shadow" id="involved-shadow"></div>
                         </li>
                     </ul>
                     
-                    
-
                     <button class="nav__btn-donate"><a href="#">Donate</a></button>
                     <a id="triggerId"><img class="nav__btn-access" src="./images/webp/accessibility_icon.webp"></a>
                     <script>
@@ -81,8 +84,15 @@
                   Please ensure Javascript is enabled for purposes of 
                   <a href="https://userway.org">website accessibility</a>
                   </noscript>
+                  <!-- mobile menu -->
+                  <div class="nav__toggle" onclick="toggleMenu()" id="toggle-btn">
+                    <span class="nav__toggle-bar"></span>
+                    <span class="nav__toggle-bar"></span>
+                    <span class="nav__toggle-bar"></span>
+                </div>
                 </div>
             </div> 
+
             
         </nav>
         <!-- <picture>
@@ -122,6 +132,6 @@
 
     </main>
   
-    
+    <script src="script.js"></script>
 </body>
 </html>

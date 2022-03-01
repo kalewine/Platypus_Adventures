@@ -1,0 +1,1 @@
+const toggleBtn=document.getElementById("toggle-btn"),toggleMenu=()=>{toggleBtn.classList.toggle("is-active")};
