@@ -20,15 +20,19 @@
                 <path class="arch" d="M0 -3H1920V136.508 C 1150 
            136 381.5 100 0 367 V -3 Z" fill="white"></path>
             </svg>
+            <!-- <svg class="nav__svg-small" width="640" height="283" viewbox="0 0 640 283">
+                <path id="small-arch" d="M 0 0 H 640 V 103.689 C 383.333 103.689 127.167 78.4426 0 275 V 0 Z" fill="white"></path>
+            </svg> -->
             <svg class="nav__svg-small" width="640" height="283" viewbox="0 0 640 283">
-                <path class="arch" d="M 0 0 H 640 V 103.689 C 383.333 103.689 127.167 78.4426 0 275 V 0 Z" fill="white"></path>
+                <path id="small-arch" d="M 0 0 H 640 V 125 C 405 125 150 100 0 275 V 0 Z" fill="white"></path>
             </svg>
-            <a class="nav__logo-link" href="#">
+           
+            <a class="nav__logo-link" id="logo" href="#">
                 <img class="nav__logo" src="./images/platypus_adventures_logo.svg"  alt="platypus with walking stick in a rainbow gradient circle"/>
             </a>
             <div class="nav__container">
-                <div class="nav__menu">
-                    <ul class="nav__list">
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list" id="nav-list">
                         <li class="nav__list-item">
                             <a href="#" class="nav__list-link">Our Work</a> 
                             <ul class="nav__dropdown">
@@ -54,42 +58,45 @@
                             <div class="nav__dropdown-shadow" id="involved-shadow"></div>
                         </li>
                     </ul>
-                    
+                   
+                  
+                </div>
+                <div class="nav__buttons">
                     <button class="nav__btn-donate"><a href="#">Donate</a></button>
                     <a id="triggerId"><img class="nav__btn-access" src="./images/webp/accessibility_icon.webp"></a>
                     <script>
                         (function(d){
-                           var s = d.createElement("script");
-                           /* uncomment the following line to override default position*/
-                           /* s.setAttribute("data-position", 3);*/
-                           /* uncomment the following line to override default size (values: small, large)*/
-                           /* s.setAttribute("data-size", "small");*/
-                           /* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
-                           /* s.setAttribute("data-language", "language");*/
-                           /* uncomment the following line to override color set via widget (e.g., #053f67)*/
-                           /* s.setAttribute("data-color", "#053e67");*/
-                           /* uncomment the following line to override type set via widget (1=person, 2=chair, 3=eye, 4=text)*/
-                           /* s.setAttribute("data-type", "1");*/
-                           /* s.setAttribute("data-statement_text:", "Our Accessibility Statement");*/
-                           /* s.setAttribute("data-statement_url", "http://www.example.com/accessibility")";*/
-                           /* uncomment the following line to override support on mobile devices*/
-                           /* s.setAttribute("data-mobile", true);*/
-                           /* uncomment the following line to set custom trigger action for accessibility menu*/
-                           s.setAttribute("data-trigger", "triggerId")
-                           s.setAttribute("data-account", "9DBXMzwRHL");
-                           s.setAttribute("src", "https://cdn.userway.org/widget.js");
-                           (d.body || d.head).appendChild(s);})(document)
-                       </script>
-                  <noscript>
-                  Please ensure Javascript is enabled for purposes of 
-                  <a href="https://userway.org">website accessibility</a>
-                  </noscript>
-                  <!-- mobile menu -->
-                  <div class="nav__toggle" onclick="toggleMenu()" id="toggle-btn">
-                    <span class="nav__toggle-bar"></span>
-                    <span class="nav__toggle-bar"></span>
-                    <span class="nav__toggle-bar"></span>
-                </div>
+                        var s = d.createElement("script");
+                        /* uncomment the following line to override default position*/
+                        /* s.setAttribute("data-position", 3);*/
+                        /* uncomment the following line to override default size (values: small, large)*/
+                        /* s.setAttribute("data-size", "small"); */
+                        /* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
+                        /* s.setAttribute("data-language", "language");*/
+                        /* uncomment the following line to override color set via widget (e.g., #053f67)*/
+                        /* s.setAttribute("data-color", "#053e67");*/
+                        /* uncomment the following line to override type set via widget (1=person, 2=chair, 3=eye, 4=text)*/
+                        /* s.setAttribute("data-type", "1");*/
+                        /* s.setAttribute("data-statement_text:", "Our Accessibility Statement");*/
+                        /* s.setAttribute("data-statement_url", "http://www.example.com/accessibility")";*/
+                        /* uncomment the following line to override support on mobile devices*/
+                        /* s.setAttribute("data-mobile", true);*/
+                        /* uncomment the following line to set custom trigger action for accessibility menu*/
+                        s.setAttribute("data-trigger", "triggerId")
+                        s.setAttribute("data-account", "9DBXMzwRHL");
+                        s.setAttribute("src", "https://cdn.userway.org/widget.js");
+                        (d.body || d.head).appendChild(s);})(document)
+                    </script>
+                <noscript>
+                Please ensure Javascript is enabled for purposes of 
+                <a href="https://userway.org">website accessibility</a>
+                </noscript>
+                    <!-- mobile menu -->
+                    <div class="nav__toggle" onclick="toggleMenu()" id="toggle-btn">
+                        <span class="nav__toggle-bar"></span>
+                        <span class="nav__toggle-bar"></span>
+                        <span class="nav__toggle-bar"></span>
+                    </div>  
                 </div>
             </div> 
 
