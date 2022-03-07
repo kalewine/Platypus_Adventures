@@ -16,6 +16,7 @@
     --blue: #83E5FF;
     --dark-blue: #03A6CB;
     --yellow: #FFEC40;
+    --shadow: #c4c4c4;
 }
 
 a {
@@ -58,7 +59,7 @@ header {
     position: relative;
     height: 100vh;
     width: 100%;
-    border: solid 2px blue;
+    /* border: solid 2px blue; */
 }
 
 main {
