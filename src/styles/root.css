@@ -24,28 +24,26 @@ a {
     text-decoration: none;
 }
 
-button {
+
+
+.button {
     border: none;
     box-shadow: 0px 7px 0px var(--btn-shadow-color);
     border-radius: 100px;
-    height: 3.25rem;
-
-}
-
-button a {
+    height: 3rem;
     border-radius: 100px;
-    height: 3.25rem;
-    padding: 1.5rem;
+    padding: 1.25rem;
     width: auto;
     display: flex;
     align-items: center;
     font-family: var(--header-font);
     font-size: 1.3rem;
-    cursor: pointer;
+    color: black;
 }
 
-   
-button:active {
+
+
+.button:active {
     box-shadow: 0px 0px 0px;
     transform: translateY(9px);
 }

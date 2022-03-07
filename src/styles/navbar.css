@@ -134,16 +134,13 @@
     margin-bottom: 0.5rem;
 }
 
-.nav__btn-donate a {
-    color: #000;
-}
 
-.nav__btn-donate a:hover {
+.nav__btn-donate:hover {
     background: var(--green-hover);
 }
 
 .nav__btn-access {
-    height: 4rem;
+    height: 3.5rem;
     margin-top: 0.4rem;
     border-radius: 100%;
     transition: all 0.2s ease;
@@ -245,14 +242,10 @@
     .nav__btn-donate {
         height: 2rem;
         margin: 0 1rem 0.25rem 0;   
+        font-size: 1.1rem;
+        padding: 1rem;
     }
 
-    
-    .nav__btn-donate a {
-        height: 2rem;
-        padding: 0.5rem 0.8rem;
-        font-size: 1.1rem;
-    }
 
     .nav__btn-access {
         height: 2rem;
@@ -422,17 +415,12 @@
     }
 
     #mobile-donate-btn{
-        height: 4.5rem;
+        height: 4rem;
         margin: 0;
+        padding: 2rem;
+        font-size: 1.6rem;
     }
 
-    #mobile-donate-btn a {
-        width: auto; 
-        height: 4.5rem;
-        padding: 1rem 2rem;
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
 
     #mobile-social-btns {
         justify-content: space-around;
@@ -488,6 +476,7 @@
         padding: 0; 
         height: 3rem;
         width: 100%;
+        border-radius: 0;
     }
     
     .nav__dropdown-link:hover{

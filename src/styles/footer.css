@@ -4,9 +4,21 @@
     align-items: center;
     background-color: #fff;
     border: 1px solid var(--shadow);
-    --btn-shadow-color: var(--shadow);
+    border-radius: 100px;
+    box-shadow: 0px 7px 0px var(--shadow);
     padding: 0 0.6rem;
+    font-size: 1rem;
+    color: #000;
+    font-family: var(--body-font);
+    font-weight: bold;
+    padding: 0.2rem 0.8rem 0.2rem 0.5rem;
 }
+
+.social-btn:active {
+    box-shadow: 0px 0px 0px;
+    transform: translateY(9px);
+}
+
 
 .social-btn__icon {
     height: 2rem;
@@ -15,10 +27,7 @@
 #facebook-icon {
     margin-bottom: 0.2rem;
 }
-.social-btn__link {
-    font-size: 1rem;
-    color: #000;
-    font-family: var(--body-font);
-    font-weight: bold;
-    padding: 0 0.5rem 0 0.3rem;
+
+#instagram-icon {
+    margin-right: 0.3rem;
 }
