@@ -1,0 +1,142 @@
+/* Image slider */
+.img-slider {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    margin-top: 5rem;
+    overflow: hidden;
+}
+
+.img-slider__img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.img-slider__arrows {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    /* border: solid 2px purple; */
+}
+
+.img-slider__arrow-background {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1.8rem;
+    background-color: rgba(5, 197, 240, 0.60);
+}
+
+.img-slider__arrow {
+    cursor: pointer;
+    height: 5rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.img-slider__arrow:hover {
+    transform: scale(1.07);
+    transition: transform ease 0.2s;
+}
+
+.img-slider__arrow:active {
+    filter: drop-shadow(0px 1px 1px);
+    transform: scale(1);
+}
+
+
+@media only screen  and (max-width: 1025px){ 
+    .img-slider {
+        height: 40vh;
+        margin-top: 3rem;
+    }
+
+    .img-slider__arrow-background {
+        padding: 0 1.2rem;
+    }
+    
+
+}
+
+@media only screen and (max-width: 481px){
+    .img-slider {
+        margin-top: 4.5rem;
+    }
+
+    .img-slider__arrows {
+        display: none;
+    }
+}
+
+/* Intro section */
+.intro {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    bottom: 6rem;
+}
+
+.intro__waves {
+    position: relative;
+    width: 100%; 
+    height: auto;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.20));
+   
+}
+
+.intro__waves img {
+    width: 100%;
+}
+
+.intro__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    max-width: 600px;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.intro__title {
+    font-family: var(--header-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+}
+
+.intro__content {
+    font-family: var(--body-font);
+}
+
+@media only screen  and (max-width: 1025px){ 
+
+   .intro__title {
+        font-size: 1.2rem;
+    } 
+    
+
+}
+
+@media only screen and (max-width: 481px){
+    .intro__content {
+        height: 100%;
+    }
+    
+
+    .intro__text {
+        font-size: 0.8rem;
+        padding: 0 0.3rem;
+        margin-bottom: 1rem;
+    }
+}

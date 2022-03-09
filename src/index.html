@@ -20,9 +20,7 @@
                 <path class="arch" d="M0 -3H1920V136.508 C 1150 
            136 381.5 100 0 367 V -3 Z" fill="white"></path>
             </svg>
-            <!-- <svg class="nav__svg-small" width="640" height="283" viewbox="0 0 640 283">
-                <path id="small-arch" d="M 0 0 H 640 V 103.689 C 383.333 103.689 127.167 78.4426 0 275 V 0 Z" fill="white"></path>
-            </svg> -->
+            
             <svg class="nav__svg-small" width="640" height="283" viewbox="0 0 640 283">
                 <path id="small-arch" d="M 0 0 H 640 V 125 C 405 125 150 100 0 275 V 0 Z" fill="white"></path>
             </svg>
@@ -86,7 +84,7 @@
                         </li>
                         <li class="nav__list-item mobile-nav__list-item" id="mobile-social-btns">
                              <a href="#" class="social-btn">
-                                <img src="./images/instagram_icon.png" alt="multi-colored instagram camera icon" class="social-btn__icon" id="instagram-icon"/>
+                                <img src="./images/instagram_icon.png" alt="multi-colored instagram camera icon" class="social-btn__icon" id="instagram -icon"/>
                                Instagram
                             </a>
                             <a href="#" class="social-btn">
@@ -164,13 +162,60 @@
         
                 alt="smiling athlete in wheelchair wheeled across finish line"
                 >
-        </picture> -->
-        <!-- <picture>
-            <source media="(min-width: 1201) 
-                    srcset="./images/athlete-in-wheelchair-finishes-race@4x.webp" type="image/webp"
-            <img width="1024w" src="" alt=/>
-        </picture> -->
-       
+        </picture>  -->
+         <section class="img-slider">
+            <div class="img-slider__arrows">
+                <div class="img-slider__arrow-background" id="left-arrow">
+                    <img class="img-slider__arrow" src="./images/left-arrow.svg">
+                </div>
+                    
+                <div class="img-slider__arrow-background" id="right-arrow">
+                    <img class="img-slider__arrow" src="./images/right-arrow.svg">
+                </div>
+            </div>
+            <picture class="img-slider__img">
+                <!-- <source
+                media="(max-width: 500px)"
+                srcset="images/webp/athlete-in-wheelchair-finishes-race@1x.webp 500w"
+                sizes="100vw"
+                > -->
+                <source type="image/webp"
+                    srcset="
+                    images/webp/athlete-in-wheelchair-finishes-race@1x.webp 500w,
+                    images/webp/athlete-in-wheelchair-finishes-race@2x.webp 768w,
+                    images/webp/athlete-in-wheelchair-finishes-race@3x.webp 1400w,
+                    images/webp/athlete-in-wheelchair-finishes-race@4x.webp 1920w"
+                    sizes="100vw"
+                >
+                <img    
+                    srcset="
+                    images/athlete-in-wheelchair-finishes-race@1x.jpg 500w,
+                    images/athlete-in-wheelchair-finishes-race@2x.jpg 768w,
+                    images/athlete-in-wheelchair-finishes-race@3x.jpg 1400w,
+                    images/athlete-in-wheelchair-finishes-race@4x.jpg 1920w"
+                    
+                    sizes="100vw"
+                    src="./images/athlete-in-wheelchair-finishes-race@4x.jpg" 
+                    alt="smiling athlete in wheelchair wheeled across finish line"
+                >
+            </picture>
+           
+            
+        </section> 
+        <section class="intro">
+            <picture class="intro__waves">
+                <source srcset="./images/waves-divider-small.svg" media="(max-width: 480px)">
+                <source srcset="./images/waves-divider-med.svg" media="(max-width: 1024px)">
+                
+                <img  srcset="./images/waves-divider-large.svg" alt="purple wave page divider">
+            </picture>
+             
+            <article class="intro__content">
+                <h1 class="intro__title">Adaptive Events for EVERY BODY</h1>
+                <p class="intro__text">Platypus Adventures is a non-profit organization that creates adaptive opportunities for individuals with disabilities, building community, courage, and confidence one step at a time.</p>
+            </article>
+        </section> 
+
     </header>
     <main>
 
