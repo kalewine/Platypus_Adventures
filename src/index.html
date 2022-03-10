@@ -17,15 +17,17 @@
         
         <nav class="nav" > 
             <svg class="nav__svg-large" width="1000" height="200" viewbox="0 0 1920 375">
-                <path class="arch" d="M0 -3H1920V136.508 C 1150 
-           136 381.5 100 0 367 V -3 Z" fill="white"></path>
+                <!-- <path class="arch" d="M0 -3H1920V136.508 C 1150 
+           136 381.5 100 0 367 V -3 Z" fill="white"></path> -->
+           <path class="arch" d="M0 -3H1920V136.508 C 1150 136 381.5 136 0 137 V -3 Z" fill="white"></path>
             </svg>
             
             <svg class="nav__svg-small" width="640" height="283" viewbox="0 0 640 283">
                 <path id="small-arch" d="M 0 0 H 640 V 125 C 405 125 150 100 0 275 V 0 Z" fill="white"></path>
+                
             </svg>
            
-            <a class="nav__logo-link" id="logo" href="#">
+            <a class="nav__logo-link scrolled" id="logo" href="#">
                 <img class="nav__logo" src="./images/platypus_adventures_logo.svg"  alt="platypus with walking stick in a rainbow gradient circle"/>
             </a>
             <div class="nav__container">
@@ -137,32 +139,7 @@
 
             
         </nav>
-        <!-- <picture>
-            <source type="image/webp"
-                sizes=" (max-width: 500px) 500px,
-                        (max-width: 768px) 768px,
-                        (max-width: 1024px) 1024px,
-                        100vw"
-                srcset="
-                  webp/image-500.webp 500w,
-                  webp/image-768.webp 768w,
-                  webp/image-1024.webp 1024w,
-                  webp/image-full.webp 1920w
-                "
-                >
-            <img 
-                srcset="siteimages/image-1024.jpg 1024w, 
-                    siteimages/image-768.jpg 768w,
-                    siteimages/image-500.jpg 500w"
-                sizes=" (max-width: 500px) 500px,
-                        (max-width: 768px) 768px,
-                        (max-width: 1024px) 1024px,
-                        100vw"
-                src="./images/athlete-in-wheelchair-finishes-race@4x.jpg" 
         
-                alt="smiling athlete in wheelchair wheeled across finish line"
-                >
-        </picture>  -->
          <section class="img-slider">
             <div class="img-slider__arrows">
                 <div class="img-slider__arrow-background" id="left-arrow">
@@ -218,7 +195,153 @@
 
     </header>
     <main>
-
+        <section class="home-section">
+            <h2 class="home-section__title">The Adaptive Fun Makers</h2>
+            <div class="adventures__flex">
+                <div class="adventures__img-positioner">
+                    <picture >
+                        <source type="image/webp"
+                            srcset="
+                            images/webp/tri-my-best-swimmer-and-buddy-red-innertube@1x.webp 480w, 
+                            images/webp/tri-my-best-swimmer-and-buddy-red-innertube@2x.webp 700w, 
+                            images/webp/tri-my-best-swimmer-and-buddy-red-innertube.webp 1400w"
+                            sizes="(max-width: 480px) 90vw, 55vw"
+                        >
+                        <img  
+                            class="adventures__img-large" 
+                            srcset="
+                            images/tri-my-best-swimmer-and-buddy-red-innertube@1x.jpg 480w, 
+                            images/tri-my-best-swimmer-and-buddy-red-innertube@2x.jpg 700w,
+                            images/tri-my-best-swimmer-and-buddy-red-innertube.jpg 1400w"
+                            sizes="(max-width: 480px) 90vw, 55vw"
+                            src="images/tri-my-best-swimmer-and-buddy-red-innertube.jpg" 
+                            alt="swimmer in red innertube smiles up at camera, with swim helper"
+                        >
+                    </picture>
+                    
+                     <a class="adventures__btn button" href="#">Explore Our Adventures</a>
+                </div>
+                <div class="adventures__right-col">
+                    <div class="adventures__img-positioner">
+                        <picture >
+                            <source type="image/webp"
+                                srcset="
+                                images/webp/tri-my-best-biker-buddies-in-tutus@1x.webp 480w, 
+                                images/webp/tri-my-best-biker-buddies-in-tutus@2x.webp 700w,
+                                images/webp/tri-my-best-biker-buddies-in-tutus.webp 1400w"
+                                sizes="(max-width: 480px) 90vw, 55vw"
+                            >
+                            <img   
+                                class="adventures__img-small" 
+                                srcset="
+                                images/tri-my-best-biker-buddies-in-tutus@1x.jpg 480w, 
+                                images/tri-my-best-biker-buddies-in-tutus@2x.jpg 700w,
+                                images/tri-my-best-biker-buddies-in-tutus.jpg 1400w"
+                                sizes="(max-width: 480px) 90vw, 55vw"
+                                src="images/tri-my-best-biker-buddies-in-tutus.jpg" 
+                                alt="triathalon biker helped by buddies in coloful tutus"
+                            >
+                        </picture>
+                            <a class="button adventures__btn" href="#">Tri My Best Triathalon</a>
+                </div>
+                <div class="adventures__img-positioner">
+                        <picture >
+                            <source type="image/webp"
+                                srcset="
+                                images/webp/platypus-yoga@1x.webp 480w, 
+                                images/webp/platypus-yoga@2x.webp 700w,
+                                images/webp/platypus-yoga.webp 1400w"
+                                sizes="(max-width: 480px) 90vw, 55vw"
+                            >
+                            <img 
+                                class="adventures__img-small"   
+                                srcset="
+                                images/platypus-yoga@1x.jpg 480w, 
+                                images/platypus-yoga@2x.jpg 700w,
+                                images/platypus-yoga.jpg 1400w"
+                                sizes="(max-width: 480px) 90vw, 55vw"
+                                src="images/platypus-yoga.jpg" 
+                                alt="yoga particpants stand smiling at the camera after class"
+                            >
+                        </picture>
+                        <a class="button adventures__btn" href="#">Yoga</a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home-section" id="involved-section">
+            <picture >
+                <source srcset="images/blue-waves-background-mobile.svg" media="(max-width: 480px)">
+                <!-- <source srcset="images/blue-waves-background-desktop.svg" media="(max-width: 1024px)"> -->
+                
+                <img  class="involved__background" srcset="images/blue-waves-background-desktop.svg" alt="blue wave page background">
+            </picture>
+            <div class="involved__content">
+                <h2 class="home-section__title">Become Part of the Adventure</h2>
+                <div class="involved__flex">
+                    <div class="involved__img-positioner">
+                        <picture >
+                            <source type="image/webp"
+                                srcset="
+                                images/webp/athlete-looks-back-at-finishline-buddies-celebrate@1x.webp 480w,
+                                images/webp/athlete-looks-back-at-finishline-buddies-celebrate@2x.webp 700w" 
+                                sizes="(max-width: 480px) 90vw, 20vw"
+                            >
+                            <img 
+                                class="involved__img"
+                                srcset="
+                                images/athlete-looks-back-at-finishline-buddies-celebrate@1x.jpg 480w,
+                                images/athlete-looks-back-at-finishline-buddies-celebrate@2x.jpg 700w," 
+                                sizes="(max-width: 480px) 90vw, 20vw"
+                                src="images/athlete-looks-back-at-finishline-buddies-celebrate.jpg"
+                                alt="triathalon athlete looks back at finshline as volunteers cheer"
+                            >
+                        </picture>
+                        <a class="button involved__btn" href="#">Join a Fundraiser</a> 
+                    </div>
+                    <div class="involved__img-positioner">
+                        <picture >
+                            <source type="image/webp"
+                                srcset="
+                                images/webp/athlete-shakes-buddy's-hand-after-triathalon@1x.webp 480w,
+                                images/webp/athlete-shakes-buddy's-hand-after-triathalon@2x.webp 700w" 
+                                sizes="(max-width: 480px) 90vw, 20vw"
+                            >
+                            <img 
+                                class="involved__img"
+                                srcset="
+                                images/athlete-shakes-buddy's-hand-after-triathalon@1x.jpg 480w,
+                                images/athlete-shakes-buddy's-hand-after-triathalon@2x.jpg 700w," 
+                                sizes="(max-width: 480px) 90vw, 20vw"
+                                src="images/athlete-shakes-buddy's-hand-after-triathalon.jpg"
+                                alt="triathalon particpant shakes buddy's hand after race"
+                            >
+                        </picture>
+                        <a class="button involved__btn" href="#">Become a Volunteer</a> 
+                    </div>
+                    <div class="involved__img-positioner">
+                        <picture >
+                            <source type="image/webp"
+                                srcset="
+                                images/webp/athlete-cheers-after-triathalon@1x.webp 480w, 
+                                images/webp/athlete-cheers-after-triathalon@2x.webp 700w"
+                                sizes="(max-width: 480px) 90vw, 20vw"
+                            >
+                            <img 
+                                class="involved__img"
+                                srcset="
+                                images/athlete-cheers-after-triathalon@1x.jpg 480w, 
+                                images/athlete-cheers-after-triathalon@2x.jpg 700w"
+                                sizes="(max-width: 480px) 90vw, 20vw"
+                                src="images/athlete-cheers-after-triathalon.jpg" 
+                                alt="triathalon athlete pumps fist in the air after race"
+                            >
+                        </picture>
+                        <a class="button involved__btn" href="#">Donate to the Cause</a> 
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
   
     <script src="script.js"></script>

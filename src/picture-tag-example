@@ -1,0 +1,26 @@
+<picture>
+    <source type="image/webp"
+        sizes=" (max-width: 500px) 500px,
+                (max-width: 768px) 768px,
+                (max-width: 1024px) 1024px,
+                100vw"
+        srcset="
+            webp/image-500.webp 500w,
+            webp/image-768.webp 768w,
+            webp/image-1024.webp 1024w,
+            webp/image-full.webp 1920w
+        "
+        >
+    <img 
+        srcset="siteimages/image-1024.jpg 1024w, 
+            siteimages/image-768.jpg 768w,
+            siteimages/image-500.jpg 500w"
+        sizes=" (max-width: 500px) 500px,
+                (max-width: 768px) 768px,
+                (max-width: 1024px) 1024px,
+                100vw"
+        src="./images/athlete-in-wheelchair-finishes-race@4x.jpg" 
+
+        alt="smiling athlete in wheelchair wheeled across finish line"
+        >
+</picture>  
