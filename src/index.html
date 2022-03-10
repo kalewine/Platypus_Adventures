@@ -82,7 +82,7 @@
                             <div class="nav__dropdown-shadow" id="involved-shadow"></div>
                         </li>
                         <li class="nav__list-item mobile-nav__list-item" id="list-item-donate">
-                           <a href="#" class="button nav__btn-donate" id="mobile-donate-btn">Donate</a>
+                           <a href="#" class="button" id="mobile-donate-btn">Donate</a>
                         </li>
                         <li class="nav__list-item mobile-nav__list-item" id="mobile-social-btns">
                              <a href="#" class="social-btn">
@@ -99,7 +99,7 @@
                   
                 </div>
                 <div class="nav__buttons">
-                    <a href="#" class="button nav__btn-donate" id="desktop-donate">Donate</a>
+                    <a href="#" class="button" id="desktop-donate-btn">Donate</a>
                     <a id="triggerId"><img class="nav__btn-access" src="./images/webp/accessibility_icon.webp"></a>
                     <script>
                         (function(d){
@@ -198,14 +198,14 @@
         <section class="home-section">
             <h2 class="home-section__title">The Adaptive Fun Makers</h2>
             <div class="adventures__flex">
-                <div class="adventures__img-positioner">
+                <div class="adventures__img-positioner" id="left-adventure-img">
                     <picture >
                         <source type="image/webp"
                             srcset="
                             images/webp/tri-my-best-swimmer-and-buddy-red-innertube@1x.webp 480w, 
                             images/webp/tri-my-best-swimmer-and-buddy-red-innertube@2x.webp 700w, 
                             images/webp/tri-my-best-swimmer-and-buddy-red-innertube.webp 1400w"
-                            sizes="(max-width: 480px) 90vw, 55vw"
+                            sizes="(max-width: 480px) 90vw, 58vw"
                         >
                         <img  
                             class="adventures__img-large" 
@@ -213,16 +213,16 @@
                             images/tri-my-best-swimmer-and-buddy-red-innertube@1x.jpg 480w, 
                             images/tri-my-best-swimmer-and-buddy-red-innertube@2x.jpg 700w,
                             images/tri-my-best-swimmer-and-buddy-red-innertube.jpg 1400w"
-                            sizes="(max-width: 480px) 90vw, 55vw"
+                            sizes="(max-width: 480px) 90vw, 58vw"
                             src="images/tri-my-best-swimmer-and-buddy-red-innertube.jpg" 
                             alt="swimmer in red innertube smiles up at camera, with swim helper"
                         >
                     </picture>
                     
-                     <a class="adventures__btn button" href="#">Explore Our Adventures</a>
+                     <a class="adventures__btn button" href="#">Our Adventures</a>
                 </div>
                 <div class="adventures__right-col">
-                    <div class="adventures__img-positioner">
+                    <div class="adventures__img-positioner" id="top-adventure-img">
                         <picture >
                             <source type="image/webp"
                                 srcset="
@@ -269,13 +269,13 @@
                 </div>
             </div>
         </section>
-        <section class="home-section" id="involved-section">
-            <picture >
+        <section class="home-section" id="involved-background">
+            <!-- <picture >
                 <source srcset="images/blue-waves-background-mobile.svg" media="(max-width: 480px)">
-                <!-- <source srcset="images/blue-waves-background-desktop.svg" media="(max-width: 1024px)"> -->
+                <!-- <source srcset="images/blue-waves-background-desktop.svg" media="(max-width: 1024px)"> 
                 
                 <img  class="involved__background" srcset="images/blue-waves-background-desktop.svg" alt="blue wave page background">
-            </picture>
+            </picture> -->
             <div class="involved__content">
                 <h2 class="home-section__title">Become Part of the Adventure</h2>
                 <div class="involved__flex">
