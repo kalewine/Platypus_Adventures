@@ -141,13 +141,13 @@
         </nav>
         
          <section class="img-slider">
-            <div class="img-slider__arrows">
+            <div class="slider__arrows" id="img-slider-arrows">
                 <div class="img-slider__arrow-background" id="left-arrow">
-                    <img class="img-slider__arrow" src="./images/left-arrow.svg">
+                    <img class="slider__arrow" src="./images/left-yellow-arrow.svg">
                 </div>
                     
                 <div class="img-slider__arrow-background" id="right-arrow">
-                    <img class="img-slider__arrow" src="./images/right-arrow.svg">
+                    <img class="slider__arrow" src="./images/right-yellow-arrow.svg">
                 </div>
             </div>
             <picture class="img-slider__img">
@@ -219,7 +219,7 @@
                         >
                     </picture>
                     
-                     <a class="adventures__btn button" href="#">Our Adventures</a>
+                     <a class="button button__blue" href="#">Our Adventures</a>
                 </div>
                 <div class="adventures__right-col">
                     <div class="adventures__img-positioner" id="top-adventure-img">
@@ -242,7 +242,7 @@
                                 alt="triathalon biker helped by buddies in coloful tutus"
                             >
                         </picture>
-                            <a class="button adventures__btn" href="#">Tri My Best Triathalon</a>
+                            <a class="button button__blue" href="#">Tri My Best Triathalon</a>
                 </div>
                 <div class="adventures__img-positioner">
                         <picture >
@@ -264,7 +264,7 @@
                                 alt="yoga particpants stand smiling at the camera after class"
                             >
                         </picture>
-                        <a class="button adventures__btn" href="#">Yoga</a> 
+                        <a class="button button__blue" href="#">Yoga</a> 
                     </div>
                 </div>
             </div>
@@ -279,68 +279,119 @@
             <div class="involved__content">
                 <h2 class="home-section__title">Become Part of the Adventure</h2>
                 <div class="involved__flex">
-                    <div class="involved__img-positioner">
+                    <div class="portrait__positioner">
                         <picture >
                             <source type="image/webp"
                                 srcset="
                                 images/webp/athlete-looks-back-at-finishline-buddies-celebrate@1x.webp 480w,
                                 images/webp/athlete-looks-back-at-finishline-buddies-celebrate@2x.webp 700w" 
-                                sizes="(max-width: 480px) 90vw, 20vw"
+                                sizes="(max-width: 480px) 60vw, 20vw"
                             >
                             <img 
-                                class="involved__img"
+                                class="portrait__img"
                                 srcset="
                                 images/athlete-looks-back-at-finishline-buddies-celebrate@1x.jpg 480w,
                                 images/athlete-looks-back-at-finishline-buddies-celebrate@2x.jpg 700w," 
-                                sizes="(max-width: 480px) 90vw, 20vw"
+                                sizes="(max-width: 480px) 60vw, 20vw"
                                 src="images/athlete-looks-back-at-finishline-buddies-celebrate.jpg"
                                 alt="triathalon athlete looks back at finshline as volunteers cheer"
                             >
                         </picture>
-                        <a class="button involved__btn" href="#">Join a Fundraiser</a> 
+                        <a class="button button__purple" href="#">Join a Fundraiser</a> 
                     </div>
-                    <div class="involved__img-positioner">
+                    <div class="portrait__positioner">
                         <picture >
                             <source type="image/webp"
                                 srcset="
                                 images/webp/athlete-shakes-buddy's-hand-after-triathalon@1x.webp 480w,
                                 images/webp/athlete-shakes-buddy's-hand-after-triathalon@2x.webp 700w" 
-                                sizes="(max-width: 480px) 90vw, 20vw"
+                                sizes="(max-width: 480px) 60vw, 20vw"
                             >
                             <img 
-                                class="involved__img"
+                                class="portrait__img"
                                 srcset="
                                 images/athlete-shakes-buddy's-hand-after-triathalon@1x.jpg 480w,
                                 images/athlete-shakes-buddy's-hand-after-triathalon@2x.jpg 700w," 
-                                sizes="(max-width: 480px) 90vw, 20vw"
+                                sizes="(max-width: 480px) 60vw, 20vw"
                                 src="images/athlete-shakes-buddy's-hand-after-triathalon.jpg"
                                 alt="triathalon particpant shakes buddy's hand after race"
                             >
                         </picture>
-                        <a class="button involved__btn" href="#">Become a Volunteer</a> 
+                        <a class="button button__purple" href="#">Become a Volunteer</a> 
                     </div>
-                    <div class="involved__img-positioner">
+                    <div class="portrait__positioner">
                         <picture >
                             <source type="image/webp"
                                 srcset="
                                 images/webp/athlete-cheers-after-triathalon@1x.webp 480w, 
                                 images/webp/athlete-cheers-after-triathalon@2x.webp 700w"
-                                sizes="(max-width: 480px) 90vw, 20vw"
+                                sizes="(max-width: 480px) 60vw, 20vw"
                             >
                             <img 
-                                class="involved__img"
+                                class="portrait__img"
                                 srcset="
                                 images/athlete-cheers-after-triathalon@1x.jpg 480w, 
                                 images/athlete-cheers-after-triathalon@2x.jpg 700w"
-                                sizes="(max-width: 480px) 90vw, 20vw"
+                                sizes="(max-width: 480px) 60vw, 20vw"
                                 src="images/athlete-cheers-after-triathalon.jpg" 
                                 alt="triathalon athlete pumps fist in the air after race"
                             >
                         </picture>
-                        <a class="button involved__btn" href="#">Donate to the Cause</a> 
+                        <a class="button button__purple" href="#">Donate to the Cause</a> 
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="home-section" id="story-slider-section">
+            <h2 class="home-section__title">Our Stories</h2>
+            <div class="story__arrows-positioner" id="desktop-story-arrows">
+                <img class="slider__arrow story__slider-arrow" src="./images/left-green-arrow.svg">
+                <div class="story__slider">
+                        <picture class="story__slider-img-container">
+                            <source type="image/webp"
+                                    media="(max-width: 480px)" 
+                                    srcset="images/webp/cohen-bikes-in-adaptive-triathalon@1x.webp 480w"
+                                    >
+                            <source type="image/webp"
+                            media="(min-width: 481px)" 
+                            srcset="  images/webp/cohen-bikes-in-adaptive-triathalon@2x.webp 480w, 
+                            images/webp/cohen-bikes-in-adaptive-triathalon@3x.webp 700w"
+                            
+                            >
+                                  
+
+                            <img 
+                                class="story__slider-img"
+                                srcset="
+                                images/cohen-bikes-in-adaptive-triathalon@1x.jpg 480w, 
+                                images/cohen-bikes-in-adaptive-triathalon@2x.jpg 700w"
+                                src="images/cohen-bikes-in-adaptive-triathalon.jpg" 
+                                alt="Cohen rides a red tricycle in adaptive triathalon"
+                            >
+                        </picture>
+                    <article class="story__slider-content">
+                        <h3 class="story__slider-title">Cohen's Turn to Race</h3>
+                    
+                        <img id="left-quote" src="/images/left-quote.svg" alt="">
+                        <p class="story__slider-text">Emily McGowan and her husband, Chris, have attended plenty of cross country meets for their oldest son, Cort, and soccer matches for their daughter, Laine, in recent years. <br/><br/> Saturday it was time for Cohen – their middle child – to have his turn.</p>
+                        <img id="right-quote" src="/images/right-quote.svg" alt="">
+                        
+                        <a class="button button__green" id="story-slider-btn" href="#">Read Cohen's Story</a> 
+                    </article>
+                </div>
+                <img class="slider__arrow story__slider-arrow" src="./images/right-green-arrow.svg">
+            </div>
+            <div class="story__indicators">
+                <div class="slider__arrows story__slider-arrow" id="mobile-story-arrows">
+                    <img class="slider__arrow" src="./images/left-green-arrow.svg">
+                    
+                    <span class="story__indicators-dot filled"></span>
+                    <span class="story__indicators-dot"></span>
+                    <span class="story__indicators-dot"></span>
+                    <img class="slider__arrow" src="./images/right-green-arrow.svg">
+                </div>
+            </div>
+
         </section>
     </main>
   

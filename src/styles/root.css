@@ -28,6 +28,7 @@ a {
 
 .button {
     position: relative;
+    font-family: var(--body-font);
     font-size: 1.3rem;
     height: 3rem;
     padding: 1.5rem;
@@ -48,6 +49,32 @@ a {
     transform: translateY(9px);
 }
 
+.button__blue {
+    background-color: var(--blue);
+    --btn-shadow-color: var(--dark-blue);
+}
+
+.button__blue:hover{
+    background: var(--blue-hover);
+}
+
+.button__purple {
+    background-color: var(--light-purple);
+    --btn-shadow-color: var(--purple);
+}
+
+.button__purple:hover{
+    background-color: var(--purple-hover)
+}
+
+.button__green {
+    background-color: var(--green);
+    --btn-shadow-color: var(--dark-green);
+}
+
+.button__green:hover{
+    background-color: var(--green-hover)
+}
 
 body {
     min-height: 100vh;
@@ -61,3 +88,36 @@ header {
     /* border: solid 2px blue; */
 }
 
+/* Potrait images with buttons */
+.portrait__positioner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portrait__img {
+    border-radius: 50px;
+    margin-bottom: 0.3rem;
+}
+
+
+@media only screen  and (max-width: 1024px){ 
+    .button {
+        height: 2rem;
+        font-size: 0.8rem;
+        padding: 0.5rem 1.25rem;
+        min-width: 6rem;
+        box-shadow: 0px 5px 0px var(--btn-shadow-color);
+        pointer-events: none;
+    }
+
+    .portrait__positioner {
+        margin-bottom: 3rem;
+     }
+
+     .portrait__img {
+        border-radius: 30px;
+     }
+
+}

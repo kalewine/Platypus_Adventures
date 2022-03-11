@@ -143,7 +143,6 @@
     font-weight: 500;
 }
 
-
 #desktop-donate-btn:hover {
     background: var(--green-hover);
 }
@@ -262,6 +261,10 @@
     }
     .nav__list {
         margin: 1.25rem 1rem 0 0;
+    }
+
+    .nav__list-link {
+        pointer-events: none;
     }
 
     .nav__list-item {
