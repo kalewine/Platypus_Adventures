@@ -143,9 +143,6 @@
     font-weight: 500;
 }
 
-#desktop-donate-btn:hover {
-    background: var(--green-hover);
-}
 
 .nav__btn-access {
     height: 3.5rem;
@@ -309,6 +306,7 @@
         left: 0;
         z-index: 10;
         transition: height 0.3s ease;
+        border: solid red;
     }
 
     
