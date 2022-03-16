@@ -263,27 +263,23 @@
         <section class="home-section" id="story-slider-section">
             <h2 class="home-section__title">Our Stories</h2>
             <div class="story__arrows-positioner" id="desktop-story-arrows">
-                <img class="slider__arrow story__slider-arrow" id="story-arrow-left" src="./images/left-green-arrow.svg">
-            <div class="story__slider-card" id="story-slider-screen">
+                <img class="slider__arrow story__slider-arrow" id="previous-story" onclick="changeStory(1)"src="./images/left-green-arrow.svg">
+            <div class="story__slider-screen" id="story-screen">
                     <div class="story__slider-container" id="story-slider">
                         <div class="story__slider-card">
                             <picture class="story__slider-img-container">
-                                <source type="image/webp"
-                                        media="(max-width: 480px)" 
-                                        srcset="images/webp/cohen-bikes-in-adaptive-triathalon@1x.webp 480w" 
-                                        srcset="images/webp/cohen-bikes-in-adaptive-triathalon@2x.webp 700w"
+                                <source type="image/webp" 
+                                        sizes="(max-width: 480px) 90vw, 50vw"
+                                        srcset="images/webp/cohen-bikes-in-adaptive-triathalon@1x.webp 360w, images/webp/cohen-bikes-in-adaptive-triathalon@2x.webp 480w,
+                                        images/webp/cohen-bikes-in-adaptive-triathalon@3x.webp 700w"
                                         >
-                                <source type="image/webp"
-                                media="(min-width: 481px)" 
-                                srcset="  images/webp/cohen-bikes-in-adaptive-triathalon@1x.webp 480w, 
-                                images/webp/cohen-bikes-in-adaptive-triathalon@2x.webp 700w">
-                                    
-
                                 <img 
                                     class="story__slider-img"
+                                    sizes="(max-width: 480px) 90vw, 50vw"
                                     srcset="
-                                    images/cohen-bikes-in-adaptive-triathalon@1x.jpg 480w, 
-                                    images/cohen-bikes-in-adaptive-triathalon@2x.jpg 700w"
+                                    images/cohen-bikes-in-adaptive-triathalon@1x.jpg 360w, 
+                                    images/cohen-bikes-in-adaptive-triathalon@2x.jpg 480w, 
+                                    images/cohen-bikes-in-adaptive-triathalon@3x.jpg 700w"
                                     src="images/cohen-bikes-in-adaptive-triathalon.jpg" 
                                     alt="Cohen rides a red tricycle in adaptive triathalon"
                                 >
@@ -300,24 +296,23 @@
                         </article>
                     </div>
                 
-                <div class="story__slider-card" id="second-story">
+                <div class="story__slider-card">
                     <picture class="story__slider-img-container">
                         <source type="image/webp"
-                                media="(max-width: 480px)" 
-                                srcset="images/webp/adison-swimming-tri-my-best@1x.webp 480w" 
-                                srcset="images/webp/adison-swimming-tri-my-best@2x.webp 700w"
+                                sizes="(max-width: 480px) 90vw, 50vw"
+                                srcset="images/webp/adison-swimming-tri-my-best@1x.webp 360w,
+                               images/webp/adison-swimming-tri-my-best@2x.webp 480w,
+                                images/webp/adison-swimming-tri-my-best@3x.webp 700w"
                                 >
-                        <source type="image/webp"
-                        media="(min-width: 481px)" 
-                        srcset="images/webp/adison-swimming-tri-my-best@1x.webp 480w, 
-                        images/webp/adison-swimming-tri-my-best@2x.webp 700w">
                             
 
                         <img 
                             class="story__slider-img"
+                            sizes="(max-width: 480px) 90vw, 50vw"
                             srcset="
-                            images/adison-swimming-tri-my-best@1x.jpg 480w, 
-                            images/adison-swimming-tri-my-best@2x.jpg 700w"
+                            images/adison-swimming-tri-my-best@1x.jpg 360w, 
+                            images/adison-swimming-tri-my-best@2x.jpg 480w, 
+                            images/adison-swimming-tri-my-best@3x.jpg 700w"
                             src="images/adison-swimming-tri-my-best.jpg" 
                             alt="Adison swims during Tri My Best Triathalon"
                         >
@@ -335,22 +330,22 @@
             
             <div class="story__slider-card">
                 <picture class="story__slider-img-container">
-                <source type="image/webp"
-                        media="(max-width: 480px)" 
-                        srcset="images/webp/grant-swimming-tri-my-best-triathalon@1x.webp 480w" 
-                        srcset="images/webp/grant-swimming-tri-my-best-triathalon@2x.webp 700w"
-                        >
-                <source type="image/webp"
-                media="(min-width: 481px)" 
-                srcset="  images/webp/grant-swimming-tri-my-best-triathalon@1x.webp 480w, 
-                images/webp/grant-swimming-tri-my-best-triathalon@2x.webp 700w">
-                        
+                <source 
+                    type="image/webp"
+                    sizes="(max-width: 480px) 90vw, 50vw"
+                    srcset="images/webp/grant-swimming-tri-my-best-triathalon@1x.webp 360w, 
+                    images/webp/grant-swimming-tri-my-best-triathalon@2x.webp 480w, 
+                    images/webp/grant-swimming-tri-my-best-triathalon@3x.webp 700w"
+                    sizes: ()
+                >        
 
                 <img 
                     class="story__slider-img"
+                    sizes="(max-width: 480px) 90vw, 50vw"
                     srcset="
-                    images/grant-swimming-tri-my-best-triathalon@1x.jpg 480w, 
-                    images/grant-swimming-tri-my-best-triathalon@2x.jpg 700w"
+                    images/grant-swimming-tri-my-best-triathalon@1x.jpg 360w,
+                    images/grant-swimming-tri-my-best-triathalon@2x.jpg 480w, 
+                    images/grant-swimming-tri-my-best-triathalon@3x.jpg 700w"
                     src="images/grant-swimming-tri-my-best-triathalon.jpg" 
                     alt="Grant swims during Tri My Best Triathalon"
                 >
@@ -367,14 +362,15 @@
                 </div>
             </div>
             </div>
-                <img class="slider__arrow story__slider-arrow" id="story-arrow-right" src="./images/right-green-arrow.svg">
+
+                <img class="slider__arrow story__slider-arrow" id="next-story" onclick="changeStory(-1)" src="./images/right-green-arrow.svg">
             </div> 
             <div class="story__indicators">
-                <img class="slider__arrow slider__arrow-mobile" src="./images/left-green-arrow.svg">
-                <span class="story__indicators-dot filled"></span>
-                <span class="story__indicators-dot"></span>
-                <span class="story__indicators-dot"></span>
-                <img class="slider__arrow slider__arrow-mobile" src="./images/right-green-arrow.svg">
+                <img class="slider__arrow slider__arrow-mobile" onclick="changeStory(1)" src="./images/left-green-arrow.svg">
+                <span class="story__indicators-dot filled" onclick="changeDot(this)"></span>
+                <span class="story__indicators-dot" onclick="changeDot(this)"></span>
+                <span class="story__indicators-dot" onclick="changeDot(this)"></span>
+                <img class="slider__arrow slider__arrow-mobile" onclick="changeStory(-1)" src="./images/right-green-arrow.svg">
             </div>
         </section>
         <section class="waves__container " >
