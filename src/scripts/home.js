@@ -26,7 +26,7 @@ const changeStory = (direction) => {
     }else if(newIndex > 1){
         shiftBy = -width * (newIndex-1)
     }
-    
+
     dots[newIndex-1].classList.add('filled');
     dots[currentIndex-1].classList.remove('filled');
     storyContainer.style.transform = `translateX(${shiftBy}px)`;
@@ -35,6 +35,7 @@ const changeStory = (direction) => {
     
 
 const changeDot = (selectedDot) => {
+   
     Array.from(dots).forEach(dot => dot.classList.remove('filled'));
     let dotNumber = Array.from(dots).indexOf(selectedDot);
     selectedDot.classList.add('filled');
@@ -43,5 +44,7 @@ const changeDot = (selectedDot) => {
     }else{
         shiftBy = -width * dotNumber
     }
+
+    currentIndex = dotNumber + 1;
     storyContainer.style.transform = `translateX(${shiftBy}px)`;
 }

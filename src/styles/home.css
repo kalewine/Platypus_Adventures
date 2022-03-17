@@ -225,9 +225,8 @@
  @media only screen  and (max-width: 481px){ 
     .adventures__img-container{
         width: 90%;
-        /* border: solid 2px; */
-    }
     
+    }
  }
 
 
