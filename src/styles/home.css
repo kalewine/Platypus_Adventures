@@ -55,7 +55,7 @@
 
 #waves-intro {
     /* display: none; */
-    margin-top: -8%;
+    margin-top: -10%;
 }
 
 @media only screen  and (max-width: 1025px){ 
@@ -191,7 +191,7 @@
      
  }
 
- @media only screen  and (max-width: 481px){ 
+ @media only screen  and (max-width: 700px){
     .adventures__flex {
         padding: 0;
         width: 100%;
@@ -203,7 +203,7 @@
     #bottom-adventure{
         flex-direction: column-reverse;
     }
-    
+
     .adventures__content {
         width: 90%;
         justify-content: center;
@@ -213,15 +213,21 @@
     }
 
     .adventures__img-container{
-        width: 90%;
-        /* border: solid 2px; */
+        width: 60%;
     }
 
     .adventures__btn-container{
         justify-content: center;
         align-items: center;
     }
+ }
 
+ @media only screen  and (max-width: 481px){ 
+    .adventures__img-container{
+        width: 90%;
+        /* border: solid 2px; */
+    }
+    
  }
 
 

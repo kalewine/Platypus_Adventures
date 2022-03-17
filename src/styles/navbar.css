@@ -20,6 +20,7 @@
     left: 0;
     background-color: #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 150ms ease;
     /* border: solid purple; */
 }
 
@@ -31,7 +32,8 @@
 
 
 .nav__logo-link {
-    height: 230%;
+    height: 300%;
+    margin-top: 0.2rem;
     width: auto;
     position: absolute;
     top: 0;
@@ -39,11 +41,13 @@
     z-index: 10;
     background-color: #fff;
     border-radius: 100%;
+    transition: all 150ms ease;
     /* border: solid magenta */
 }
 
 #shadow-logo {
-    height: 230%;
+    height: 300%;
+    margin-top: 0.2rem;
     width: auto;
     position: absolute;
     top: 0;
@@ -52,7 +56,9 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 100%;
     background-color: #fff;
+    transition: all 150ms ease;
 }
+
 
 .nav__menu {
     position: relative; 
@@ -81,9 +87,10 @@
     font-size: 1.1rem;
     font-family: var(--header-font);
     color: var(--purple);
-    width: 10rem;
+    width: 8rem;
     padding: 1rem 0;
     height: 100%;
+    transition: all 150ms ease;
     /* border: solid salmon; */
 }
 
@@ -125,23 +132,23 @@
 #desktop-donate-btn, #mobile-donate-btn {
     font-size: 1.1rem;
     padding: 0rem 2rem;
-    height: 2.2rem;
-    width: 5.2rem;
+    height: 2.5rem;
+    width: 5.5rem;
     min-width: 5rem;
     background: var(--green);
     --btn-shadow-color: var(--dark-green);
     font-family: var(--header-font);
-    margin-bottom: 0.3rem;
-    margin: 0 1rem 0.3rem 2rem;
+    margin: 0 1rem 0.3rem 1.5rem;
     font-weight: 500;
+    transition: all 150ms ease;
 }
 
 
 .nav__btn-access {
-    margin: 0 3rem 0 2rem;
+    margin: 0.2rem 1.75rem 0 0.75rem;
     height: 2.5rem;
     border-radius: 100%;
-    transition: all 0.2s ease;
+    transition: all 150ms ease;
 }
 
 .nav__btn-access:hover {
@@ -167,9 +174,9 @@
     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     border-radius: 0px 0px 16px 16px;
     height: auto;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
     padding: 0 0.2rem 0.2rem 0.2rem;
-    width: 10rem;
+    width: 8rem;
 }
 
 
@@ -184,7 +191,7 @@
     border-radius: 0px 0px 16px 16px;
     margin-top: 1rem;
     padding: 0 0.2rem 0.2rem 0.2rem;
-    width: 10rem;
+    width: 8rem;
     z-index: -10;
 }
 
@@ -236,6 +243,51 @@
     display: none;
 }
 
+/* Nav Scrolled */
+.nav__logo-link.scrolled, #shadow-logo.scrolled {
+    height: 180%;
+    margin-left: 1rem;
+}
+
+#desktop-donate-btn.scrolled {
+    font-size: 1rem;
+    height: 2rem;
+    width: 5rem;
+    box-shadow: 0px 5px 0px var(--btn-shadow-color);
+}
+
+#desktop-donate-btn.scrolled:active {
+    box-shadow: 0px 0px 0px;
+    transition: transform 0ms ease;
+    transform: translateY(6px);
+}
+
+.nav__list-link.scrolled::before{
+    bottom: -6px;
+}
+
+.nav__list-item.scrolled{
+    font-size: 1rem;
+    padding: 0.8rem 0;
+}
+
+.nav__dropdown-link.scrolled{
+    font-size: 0.8rem;
+}
+
+#work-shadow.scrolled {
+    height: 5rem;
+}
+
+
+ #about-shadow.scrolled {
+     height: 6rem;
+ }
+
+ #involved-shadow {
+     height: 8rem;
+ }
+
 @media only screen  and (max-width: 1025px){
     #desktop-donate-btn {
         height: 2rem;
@@ -243,14 +295,19 @@
         font-size: 1.1rem;
         padding: 1rem;
     }
+    
+    .nav__logo-link, #shadow-logo{
+        height: 250%;
+        width: auto;
+    }
 
+    .nav__buttons {
+        margin-left: 1rem; 
+    }
 
     .nav__btn-access {
         height: 2rem;
-        margin-right: 1rem;
-    }
-    .nav__list {
-        margin: 1.25rem 1rem 0 0;
+        margin: 0 1rem 0 0;
     }
 
     .nav__list-link {
@@ -258,7 +315,7 @@
     }
 
     .nav__list-item {
-        font-size: 1.1rem;
+        font-size: 1rem;
         width: 7rem;
     }
 
@@ -270,43 +327,51 @@
     #about-shadow {
         height: 9.5rem;
     }
-    
-   
-
-    
 }
 
-@media only screen and (max-width: 481px){
-    
-    .nav__svg-large {
-        display: none;
+@media only screen and (max-width: 740px){
+    .nav {
+        height: 5rem;
     }
 
-    .nav__svg-small {
-        display: block;
+    .nav__container {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
     }
 
-    #small-arch {
-        transition: all 0.3s ease;
+    #shadow-logo {
+        /* display: none; */
+         height: 150%;
+        width: auto;
     }
 
-    
     .nav__logo-link {
-        height: 58%;
+        height: 150%;
         width: auto;
         position: absolute;
         top: 0;
         left: 0;
         z-index: 10;
-        transition: height 0.3s ease;
-        border: solid red;
+        /* border: solid red; */
     }
 
+    .nav__logo-link.is-active, #shadow-logo.is-active{
+        height: 92%;
+        margin-left: 1rem;
+    }
+
+    .nav__logo {
+        height: 100%;
+    }
+
+    
     
     .nav__list {
         position: relative;
         top: 0;
-        margin-top: 20%;
+        margin-top: 5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -318,8 +383,7 @@
     }
    
     .nav__buttons {
-        width: auto;
-        height: 45%;
+        position: absolute;
         z-index: 2;
     }
     
@@ -344,7 +408,7 @@
         transition: all 300ms ease-in-out;
         padding: 1rem;
         cursor: pointer; 
-        margin-right: 0.5rem;
+        margin-right: 1rem;
     }
     
     .mobile-nav__toggle-bar {
@@ -368,15 +432,11 @@
     #toggle-btn.is-active .mobile-nav__toggle-bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-
-    #logo.is-active {
-        height: 40%;
-    }
     
     .nav__menu {
         display: block;
         width: 100%; 
-        height: 45%;
+        height: 100%;
         transition: border-bottom 300ms ease 250ms;
     }
     
@@ -398,7 +458,6 @@
         flex-direction: column;
         font-size: 1.5rem;
         width: 100%;
-        /* padding: 1.5rem 2rem; */
         height: auto;
         transition: border-bottom 200ms ease 500ms;
     }
@@ -418,7 +477,8 @@
     }
 
     #mobile-donate-btn{
-        height: 4rem;
+        height: 4.5rem;
+        width: 10rem;
         margin: 0;
         padding: 2rem;
         font-size: 1.6rem;
@@ -446,10 +506,6 @@
        
     }    
 
-    /* #toggle-icon {
-        height: 2.5rem;
-    } */
-
     .nav__dropdown-toggle-icon.is-open {
         transform: rotateX(-180deg);
     } 
@@ -469,6 +525,7 @@
         position: relative;
         width: 100%;
         margin-top: 0;
+        transition: height 150ms ease;
     }
 
     
@@ -516,12 +573,19 @@
         display: none;
     }
     
+
     /* toggle mobile dropdown menu */
     #work.is-open,  #about.is-open, #involved.is-open{
         display: flex; 
     }
 
 
+    /* mobile scrolled positioning */
+    .nav__logo-link.scrolled, #shadow-logo.scrolled {
+        height: 92%;
+        margin-left: 1rem;
+    }
+    
 
 }
 
