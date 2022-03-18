@@ -12,11 +12,12 @@
     <header>
         <nav class="nav" >
             <div class="nav__container">
+                <!-- LOGO -->
                 <img class="nav__logo " id="shadow-logo" src="./images/platypus_adventures_logo.svg"  alt="platypus with walking stick in a rainbow gradient circle"/>
                 <a class="nav__logo-link " id="logo" href="#">
                     <img class="nav__logo" src="./images/platypus_adventures_logo.svg"  alt="platypus with walking stick in a rainbow gradient circle"/>
                 </a>
-                
+                <!-- MENU -->
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list" id="nav-list">
                         <li class="nav__list-item ">
@@ -67,16 +68,17 @@
                             </ul>
                             <div class="nav__dropdown-shadow" id="involved-shadow"></div>
                         </li>
+                        <!-- MOBILE BUTTONS -->
                         <li class="nav__list-item mobile-nav__list-item" id="list-item-donate">
                             <a href="#" class="button" id="mobile-donate-btn">Donate</a>
                         </li>
                         <li class="nav__list-item mobile-nav__list-item" id="mobile-social-btns">
                                 <a href="#" class="social-btn social-btn__mobile">
-                                <img src="./images/instagram_icon.png" alt="multi-colored instagram camera icon" class="social-btn__icon" id="instagram -icon"/>
+                                <img src="images/instagram_icon.png" alt="multi-colored instagram camera icon" class="social-btn__icon" id="instagram -icon"/>
                                 Instagram
                             </a>
                             <a href="#" class="social-btn social-btn__mobile">
-                                <img src="./images/facebook_icon.png" alt="purple facebook 'f' icon" class="social-btn__icon" id="facebook-icon"/>
+                                <img src="images/facebook_icon.png" alt="purple facebook 'f' icon" class="social-btn__icon" id="facebook-icon"/>
                                 Facebook
                             </a>
                         </li>
@@ -84,27 +86,13 @@
                     
                     
                 </div>
+                <!-- DESKTOP BUTTONS -->
                 <div class="nav__buttons">
                     <a href="#" class="button " id="desktop-donate-btn">Donate</a>
-                    <a id="triggerId"><img class="nav__btn-access" src="./images/webp/accessibility_icon.webp"></a>
+                    <a id="triggerId"><img class="nav__btn-access" src="images/webp/accessibility_icon.webp"></a>
                     <script>
                         (function(d){
                         var s = d.createElement("script");
-                        /* uncomment the following line to override default position*/
-                        /* s.setAttribute("data-position", 3);*/
-                        /* uncomment the following line to override default size (values: small, large)*/
-                        /* s.setAttribute("data-size", "small"); */
-                        /* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
-                        /* s.setAttribute("data-language", "language");*/
-                        /* uncomment the following line to override color set via widget (e.g., #053f67)*/
-                        /* s.setAttribute("data-color", "#053e67");*/
-                        /* uncomment the following line to override type set via widget (1=person, 2=chair, 3=eye, 4=text)*/
-                        /* s.setAttribute("data-type", "1");*/
-                        /* s.setAttribute("data-statement_text:", "Our Accessibility Statement");*/
-                        /* s.setAttribute("data-statement_url", "http://www.example.com/accessibility")";*/
-                        /* uncomment the following line to override support on mobile devices*/
-                        /* s.setAttribute("data-mobile", true);*/
-                        /* uncomment the following line to set custom trigger action for accessibility menu*/
                         s.setAttribute("data-trigger", "triggerId")
                         s.setAttribute("data-account", "9DBXMzwRHL");
                         s.setAttribute("src", "https://cdn.userway.org/widget.js");
@@ -114,7 +102,7 @@
                 Please ensure Javascript is enabled for purposes of 
                 <a href="https://userway.org">website accessibility</a>
                 </noscript>
-                    <!-- mobile menu -->
+                    <!-- MOBILE MENU -->
                     <div class="mobile-nav__toggle" onclick="toggleMenu()" id="toggle-btn">
                         <span class="mobile-nav__toggle-bar"></span>
                         <span class="mobile-nav__toggle-bar"></span>
@@ -123,17 +111,19 @@
                 </div>
             </div>
         </nav>
-        
+        <!-- HERO SECTION -->
+            <!-- target is observed element -->
          <section class="img-slider" id="target">
-            <div class="slider__arrows" id="img-slider-arrows">
+             <!-- IMG SLIDER ARROWS -->
+            <!-- <div class="slider__arrows" id="img-slider-arrows">
                 <div class="img-slider__arrow-background" id="left-arrow">
-                    <img class="slider__arrow" src="./images/left-yellow-arrow.svg">
+                    <img class="slider__arrow img-slider__arrow" src="./images/left-yellow-arrow.svg">
                 </div>
                     
                 <div class="img-slider__arrow-background" id="right-arrow">
-                    <img class="slider__arrow" src="./images/right-yellow-arrow.svg">
-                </div>
-            </div>
+                    <img class="slider__arrow img-slider__arrow" src="./images/right-yellow-arrow.svg">
+                </div> 
+            </div> -->
             <picture class="img-slider__img">
                 <source type="image/webp"
                     srcset="
@@ -141,7 +131,11 @@
                     images/webp/athlete-in-wheelchair-finishes-race@2x.webp 768w,
                     images/webp/athlete-in-wheelchair-finishes-race@3x.webp 1400w,
                     images/webp/athlete-in-wheelchair-finishes-race@4x.webp 1920w"
-                    sizes="100vw"
+                    sizes="
+                    (max-width: 480px) 500px,
+                    (max-width: 768px) 768px,
+                    (max-width: 1024px) 1024px,
+                    100vw"
                 >
                 <img    
                     srcset="
@@ -149,16 +143,19 @@
                     images/athlete-in-wheelchair-finishes-race@2x.jpg 768w,
                     images/athlete-in-wheelchair-finishes-race@3x.jpg 1400w,
                     images/athlete-in-wheelchair-finishes-race@4x.jpg 1920w"
-                    
-                    sizes="100vw"
-                    src="./images/athlete-in-wheelchair-finishes-race@4x.jpg" 
+                    sizes="
+                    (max-width: 480px) 500px,
+                    (max-width: 768px) 768px,
+                    (max-width: 1024px) 1024px,
+                    100vw"
+                    src="images/athlete-in-wheelchair-finishes-race@4x.jpg" 
                     alt="smiling athlete in wheelchair wheeled across finish line"
                 >
             </picture>
            
             
         </section> 
-
+        <!-- INTRO SECTION -->
         <section class="waves__container" id="waves-intro" >
             <img class="waves__crests top-waves" src="images/purple-waves-top.svg" alt="upward wave crests"> 
             <div class="waves__body waves__purple">
@@ -172,6 +169,7 @@
 
     </header>
     <main>
+        <!-- ADVENTURES SECTION -->
         <section class="home-section">
             <h2 class="home-section__title">Our Adventures</h2>
             <div class="adventures__flex" id="top-adventure">
@@ -180,7 +178,9 @@
                         srcset="
                         images/webp/tri-my-best-biker-buddies-in-tutus@1x.webp 480w, 
                         images/webp/tri-my-best-biker-buddies-in-tutus@2x.webp 700w"
-                        sizes="(max-width: 480px) 90vw, 100vw"
+                        sizes="
+                        (max-width: 480px) 90vw, 
+                        100vw"
                     >
                     <img   
                         class="adventures__img" 
@@ -227,7 +227,7 @@
                
             </div>
         </section>
-
+        <!-- VOLUNTEER DIVIDER YELLOW/PURPLE  -->
         <section class="waves-container">
             <img class="waves__crests top-waves" src="images/blue-waves-top.svg" alt="upward wave crests"> 
             <div class="waves__body waves__blue">
@@ -238,7 +238,7 @@
             </div>
             <img class="waves__crests bottom-waves" src="images/blue-waves-bottom.svg" alt="downward wave crests"> 
         </section>
-        
+        <!-- STORY SLIDER -->
         <section class="home-section" id="story-slider-section">
             <h2 class="home-section__title">Our Stories</h2>
             <div class="story__arrows-positioner" id="desktop-story-arrows">
@@ -248,13 +248,13 @@
                         <div class="story__slider-card">
                             <picture class="story__slider-img-container">
                                 <source type="image/webp" 
-                                        sizes="(max-width: 480px) 90vw, 50vw"
+                                        sizes="(max-width: 600px) 90vw, 50vw"
                                         srcset="images/webp/cohen-bikes-in-adaptive-triathalon@1x.webp 360w, images/webp/cohen-bikes-in-adaptive-triathalon@2x.webp 480w,
                                         images/webp/cohen-bikes-in-adaptive-triathalon@3x.webp 700w"
                                         >
                                 <img 
                                     class="story__slider-img"
-                                    sizes="(max-width: 480px) 90vw, 50vw"
+                                    sizes="(max-width: 600px) 90vw, 50vw"
                                     srcset="
                                     images/cohen-bikes-in-adaptive-triathalon@1x.jpg 360w, 
                                     images/cohen-bikes-in-adaptive-triathalon@2x.jpg 480w, 
@@ -278,16 +278,14 @@
                 <div class="story__slider-card">
                     <picture class="story__slider-img-container">
                         <source type="image/webp"
-                                sizes="(max-width: 480px) 90vw, 50vw"
+                                sizes="(max-width: 600px) 90vw, 50vw"
                                 srcset="images/webp/adison-swimming-tri-my-best@1x.webp 360w,
                                images/webp/adison-swimming-tri-my-best@2x.webp 480w,
                                 images/webp/adison-swimming-tri-my-best@3x.webp 700w"
-                                >
-                            
-
+                        >
                         <img 
                             class="story__slider-img"
-                            sizes="(max-width: 480px) 90vw, 50vw"
+                            sizes="(max-width: 600px) 90vw, 50vw"
                             srcset="
                             images/adison-swimming-tri-my-best@1x.jpg 360w, 
                             images/adison-swimming-tri-my-best@2x.jpg 480w, 
@@ -311,16 +309,15 @@
                 <picture class="story__slider-img-container">
                 <source 
                     type="image/webp"
-                    sizes="(max-width: 480px) 90vw, 50vw"
+                    sizes="(max-width: 600px) 90vw, 50vw"
                     srcset="images/webp/grant-swimming-tri-my-best-triathalon@1x.webp 360w, 
                     images/webp/grant-swimming-tri-my-best-triathalon@2x.webp 480w, 
                     images/webp/grant-swimming-tri-my-best-triathalon@3x.webp 700w"
                     sizes: ()
                 >        
-
                 <img 
                     class="story__slider-img"
-                    sizes="(max-width: 480px) 90vw, 50vw"
+                    sizes="(max-width: 600px) 90vw, 50vw"
                     srcset="
                     images/grant-swimming-tri-my-best-triathalon@1x.jpg 360w,
                     images/grant-swimming-tri-my-best-triathalon@2x.jpg 480w, 
@@ -352,6 +349,7 @@
                 <img class="slider__arrow slider__arrow-mobile" onclick="changeStory(-1)" src="./images/right-green-arrow.svg">
             </div>
         </section>
+        <!-- DONATE DIVIDER GREEN/PURPLE -->
         <section class="waves__container " >
             <img class="waves__crests top-waves" src="images/green-waves-top.svg" alt="upward wave crests"> 
             <div class="waves__body waves__green">
@@ -362,6 +360,7 @@
             </div>
             <img class="waves__crests bottom-waves" src="images/green-waves-bottom.svg" alt="downward wave crests"> 
         </section>
+        <!-- SUPPORTERS SECTION -->
         <section class="supporters">
             <p class="supporters__text">We can only do what we do thanks to
                 the life changing support of these partners.</p>
@@ -394,7 +393,7 @@
             </div>
         </section>
     </main>
-    
+    <!-- FOOTER -->
     <section class="footer">
             <div class="footer__flex">
                 <div class="footer__mobile-flex">
@@ -426,10 +425,7 @@
                 </a> 
             </div>
         </div>
-       
-    
     </section>
-    <!-- <script src="./scripts/home.js"></script> -->
     <script src="script.js"></script>
 </body>
 </html>
