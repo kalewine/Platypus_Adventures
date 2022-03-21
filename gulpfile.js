@@ -1,13 +1,16 @@
 const gulp = require('gulp');
 const uglify = require('gulp-uglify');
-const webp = require('gulp-webp');
+const webp = require("gulp-webp");
 const squoosh = require('gulp-libsquoosh');
+// const imagemin = require("gulp-imagemin");
 const minify = require('gulp-minify-css');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const htmlmin = require('gulp-htmlmin');
 const { watch } = require('browser-sync');
 const browsersync = require('browser-sync').create();
+
+
 
 // Copy All HTML files
 gulp.task('html', () => {
@@ -38,7 +41,7 @@ gulp.task('js', function(){
  
 
 // Optimize images
-gulp.task('minimages', () => {
+gulp.task('imagemin', () => {
     return gulp.src('src/images/**')
     .pipe(squoosh())
     .pipe(gulp.dest('dist/images'))
@@ -75,4 +78,5 @@ gulp.task('watchTask', () => {
     gulp.watch('src/images/*.svg', browsersyncReload)
 })
 
-exports.default = gulp.series('html', 'css', 'js','minimages', 'webp', browsersyncServe, 'watchTask')
+exports.default = gulp.series('html', 'css', 'js', 'imagemin', 'webp', browsersyncServe, 'watchTask')
+

@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="nav" >
+        <nav class="nav" id="nav">
             <div class="nav__container">
                 <!-- LOGO -->
                 <img class="nav__logo " id="shadow-logo" src="./images/platypus_adventures_logo.svg"  alt="platypus with walking stick in a rainbow gradient circle"/>
@@ -242,7 +242,9 @@
         <section class="home-section" id="story-slider-section">
             <h2 class="home-section__title">Our Stories</h2>
             <div class="story__arrows-positioner" id="desktop-story-arrows">
-                <img class="slider__arrow story__slider-arrow" id="previous-story" onclick="changeStory(1)"src="./images/left-green-arrow.svg">
+                <div class="story__arrows-background" id="previous-story-background" >
+                    <img class="slider__arrow story__slider-arrow" id="previous-story" onclick="changeStory(1)"src="./images/left-green-arrow.svg">
+                </div>
             <div class="story__slider-screen" id="story-screen">
                     <div class="story__slider-container" id="story-slider">
                         <div class="story__slider-card">
@@ -338,8 +340,9 @@
                 </div>
             </div>
             </div>
-
+            <div class="story__arrows-background" id="next-story-background">
                 <img class="slider__arrow story__slider-arrow" id="next-story" onclick="changeStory(-1)" src="./images/right-green-arrow.svg">
+            </div>
             </div> 
             <div class="story__indicators">
                 <img class="slider__arrow slider__arrow-mobile" onclick="changeStory(1)" src="./images/left-green-arrow.svg">

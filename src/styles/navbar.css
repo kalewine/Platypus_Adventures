@@ -37,7 +37,7 @@
     width: auto;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -0.4%;
     z-index: 10;
     background-color: #fff;
     border-radius: 100%;
@@ -51,7 +51,7 @@
     width: auto;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -0.4%;
     z-index: -1;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 100%;
@@ -327,11 +327,29 @@
     #about-shadow {
         height: 9.5rem;
     }
+
+    #about-shadow.scrolled {
+        height: 7.5rem;
+    }
+
+    #work-shadow.scrolled {
+        height: 6rem;
+    }
+
+    #involved-shadow{
+        height: 10rem;
+    }
+
+    #involved-shadow.scrolled {
+        height: 9.25rem;
+    }
+
 }
 
 @media only screen and (max-width: 740px){
     .nav {
-        height: 5rem;
+        height: 4rem;
+        transition: height 500ms ease;
     }
 
     .nav__container {
@@ -342,9 +360,9 @@
     }
 
     #shadow-logo {
-        /* display: none; */
-         height: 150%;
+        height: 150%;
         width: auto;
+        left: -2px;
     }
 
     .nav__logo-link {
@@ -352,14 +370,9 @@
         width: auto;
         position: absolute;
         top: 0;
-        left: 0;
+        left: -2px;
         z-index: 10;
         /* border: solid red; */
-    }
-
-    .nav__logo-link.is-active, #shadow-logo.is-active{
-        height: 92%;
-        margin-left: 1rem;
     }
 
     .nav__logo {
@@ -381,6 +394,18 @@
         transform: translateX(110%);
         transition: transform 500ms ease;
     }
+
+    .nav__list-item {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        font-size: 1.5rem;
+        width: 100%;
+        height: auto;
+        transition: border-bottom 200ms ease 500ms;
+    }
    
     .nav__buttons {
         position: absolute;
@@ -393,8 +418,9 @@
 
 
     .nav__btn-access {
-        height: 3rem;
+        height: 2.5rem;
         margin-right: 2rem;
+        margin-top: 0.3rem;
     }
 
     .mobile-nav__toggle{
@@ -403,7 +429,7 @@
         justify-content: space-around;
         position: relative; 
         height: auto;
-        right: 0;
+        right: 15px;
         top: 0;  
         transition: all 300ms ease-in-out;
         padding: 1rem;
@@ -439,7 +465,17 @@
         height: 100%;
         transition: border-bottom 300ms ease 250ms;
     }
-    
+/* Open Menu */
+
+    .nav.is-active{
+        height: 5rem;
+    }
+
+    .nav__logo-link.is-active, #shadow-logo.is-active{
+        height: 92%;
+        margin-left: 1rem;
+    }
+        
     #nav-menu.is-active {
         border-bottom: 3px solid var(--purple);
     }
@@ -448,24 +484,20 @@
     #nav-list.is-active{
         transform: translateX(0%);
         transition: transform 500ms ease;  
+
     }
-    
-    .nav__list-item {
-        text-align: left;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+
+    .nav__list-item.is-active{
+        border-bottom: var(--purple) 2px solid;
         font-size: 1.5rem;
-        width: 100%;
-        height: auto;
-        transition: border-bottom 200ms ease 500ms;
+    }
+
+
+    .nav__dropdown-link.is-active {
+        font-size: 1rem;
     }
 
     
-    .nav__list-item.is-active{
-        border-bottom: var(--purple) 2px solid;
-    }
 
     .mobile-nav__list-item.is-active{
         border-bottom: none;

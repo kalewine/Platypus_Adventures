@@ -4,6 +4,7 @@ const body = document.querySelector('body');
 const logo = document.getElementById('logo');
 const shadowLogo = document.getElementById('shadow-logo');
 const desktopDonate = document.getElementById('desktop-donate-btn');
+const nav = document.getElementById('nav');
 const navmenu = document.getElementById('nav-menu');
 const navlist = document.getElementById('nav-list');
 const navListItem = document.getElementsByClassName('nav__list-item');
@@ -64,15 +65,16 @@ const closeDropdowns = () => {
 }
 
 // mobile menu toggle
+const addIsActive = [toggleBtn, logo, shadowLogo, navmenu, navlist, body, nav]
+
 const toggleMenu = () => {
     closeDropdowns()
-    Array.from(navListItem).forEach(item => item.classList.toggle('is-active'))
-    toggleBtn.classList.toggle('is-active');
-    logo.classList.toggle('is-active');
-    shadowLogo.classList.toggle('is-active');
-    navmenu.classList.toggle('is-active')
-    navlist.classList.toggle('is-active')
-    body.classList.toggle('is-active')
+    Array.from(navListItem).forEach(item => item.classList.toggle('is-active')
+    )
+    Array.from(navDropdownLink).forEach(item => item.classList.toggle('is-active')
+    )
+    addIsActive.forEach(element => element.classList.toggle('is-active')
+    )
 }
 
 // toggle mobile menu dropdowns

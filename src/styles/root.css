@@ -286,8 +286,8 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 2rem 0;
-    margin: 2rem 0;
+    padding:2rem 0;
+    margin: 1rem 0 2rem 0;
     /* border: orangered solid; */
 }
 
