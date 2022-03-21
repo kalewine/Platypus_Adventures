@@ -128,7 +128,7 @@ header {
     width: 100%;
     height: auto;
     z-index: 1;
-    /* overflow: hidden; */
+    overflow: hidden;
     /* border: solid blue; */
 }
 
