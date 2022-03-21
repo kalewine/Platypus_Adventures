@@ -425,7 +425,7 @@
     .story__arrows-positioner{
         margin-top: -1rem;
     }
-    
+
     .story__arrows-background {
         position: absolute;
         border: 1px solid #989898;
@@ -434,11 +434,11 @@
         border-radius: 100%;
         width: 50px;
         height: 50px;
-        z-index: 5;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        z-index: 1;
     }
 
     .story__arrows-background:active{
@@ -448,7 +448,6 @@
     }
 
     .slider__arrow {
-        z-index: 5;
         height: 30px;
         filter: drop-shadow(0px 0px 0px);
     }
@@ -543,6 +542,7 @@
     .story__indicators {
         margin: 0; 
         padding: 0;
+        margin-top: -1rem;
     }
 
 }
