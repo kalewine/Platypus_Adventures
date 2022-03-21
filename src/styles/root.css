@@ -142,9 +142,6 @@ header {
     /* border: solid green; */
 }
 
-.waves__crests path {
-    fill: var(--blue);
-}
 
 .waves__purple {
     background-color: var(--purple);
@@ -164,8 +161,10 @@ header {
 }
 
 .waves__crests {
+    object-position: center;
+    object-fit: fill;
     height: auto;
-    width: 100%;
+    width: 105%;
     z-index: -1;
 } 
 
