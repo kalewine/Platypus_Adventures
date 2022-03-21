@@ -165,6 +165,7 @@ header {
     height: auto;
     width: 105%;
     z-index: -1;
+    /* overflow: hidden; */
 } 
 
 .top-waves {
