@@ -290,6 +290,14 @@ header {
     /* border: orangered solid; */
 }
 
+.supporters__link{
+    transition: transform 200ms ease;
+}
+
+.supporters__link:hover {
+    transform: scale(1.07);
+}
+
 .supporters__text {
     max-width: 45%;
     font-family: var(--body-font);

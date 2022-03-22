@@ -74,7 +74,12 @@
 .footer__logo {
     width: auto;
     height: 8rem;
+    transition: transform 200ms ease;
     /* border: solid blue; */
+}
+
+.footer__logo:hover{
+    transform: scale(1.07);
 }
 
 .social-btn {
@@ -87,7 +92,7 @@
     color: #000;
     font-family: var(--body-font);
     font-weight: bold;
-    transition: transform 250ms ease;
+    transition: transform 200ms ease;
 }
 
 .social-btn:hover {

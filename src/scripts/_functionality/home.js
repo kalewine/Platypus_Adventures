@@ -4,10 +4,10 @@ const storyScreen = document.getElementById('story-screen');
 const dots = document.getElementsByClassName('story__indicators-dot')
 
 let shiftBy;
-let width = storyScreen.getBoundingClientRect().width;
 let currentIndex = 1;
 
 const changeStory = (direction) => {
+    let width = storyScreen.getBoundingClientRect().width;
     let newIndex;
     let maxIndex = stories.length; 
    
@@ -35,7 +35,7 @@ const changeStory = (direction) => {
     
 
 const changeDot = (selectedDot) => {
-   
+    let width = storyScreen.getBoundingClientRect().width;
     Array.from(dots).forEach(dot => dot.classList.remove('filled'));
     let dotNumber = Array.from(dots).indexOf(selectedDot);
     selectedDot.classList.add('filled');
