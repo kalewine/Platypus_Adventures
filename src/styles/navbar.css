@@ -471,9 +471,13 @@
         height: 5rem;
     }
 
-    .nav__logo-link.is-active, #shadow-logo.is-active{
+    .nav__logo-link.is-active {
         height: 92%;
         margin-left: 1rem;
+    }
+
+    #shadow-logo.is-active{
+        display: none;
     }
         
     #nav-menu.is-active {
