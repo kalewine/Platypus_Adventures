@@ -10,9 +10,48 @@
 <body>
     <header>
         <platypus-navbar></platypus-navbar>
+        <section class="img-slider" id="target">
+           <picture class="img-slider__img">
+               <source type="image/webp"
+                   srcset="
+                   ../images/webp/athlete-in-wheelchair-finishes-race@1x.webp 500w,
+                   ../images/webp/athlete-in-wheelchair-finishes-race@2x.webp 768w,
+                   ../images/webp/athlete-in-wheelchair-finishes-race@3x.webp 1400w,
+                   ../images/webp/athlete-in-wheelchair-finishes-race@4x.webp 1920w"
+                   sizes="
+                   (max-width: 480px) 500px,
+                   (max-width: 768px) 768px,
+                   (max-width: 1024px) 1024px,
+                   100vw"
+               >
+               <img    
+                   srcset="
+                   ../images/athlete-in-wheelchair-finishes-race@1x.jpg 500w,
+                   ../images/athlete-in-wheelchair-finishes-race@2x.jpg 768w,
+                   ../images/athlete-in-wheelchair-finishes-race@3x.jpg 1400w,
+                   ../images/athlete-in-wheelchair-finishes-race@4x.jpg 1920w"
+                   sizes="
+                   (max-width: 480px) 500px,
+                   (max-width: 768px) 768px,
+                   (max-width: 1024px) 1024px,
+                   100vw"
+                   src="../images/athlete-in-wheelchair-finishes-race@4x.jpg" 
+                   alt="smiling athlete in wheelchair wheeled across finish line"
+               >
+           </picture>
+       </section>
+       <intro-waves 
+            intro-title="OUR WORK" 
+            intro-text="Platypus Adventures creates a variety of adaptive opportunities including a triathlon and yoga."></intro-waves> 
     </header>
     <main>
-        <donate-green-purple></donate-green-purple>
+        <waves-divider 
+            background-color="green" 
+            button-color="purple" 
+            link="https://paypal.me/platypusadventures?country.x=US&locale.x=en_US" 
+            divider-text="Help Make the Adventures Happen" 
+            btn-text="Donate">
+        </waves-divider>
         <platypus-sponsors></platypus-sponsors>
     </main>
     <platypus-footer></platypus-footer>

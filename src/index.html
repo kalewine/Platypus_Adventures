@@ -56,17 +56,10 @@
             
         </section> 
         <!-- INTRO SECTION -->
-        <section class="waves__container" id="waves-intro" >
-            <img class="waves__crests top-waves" src="images/purple-waves-top.svg" alt="upward wave crests"> 
-            <div class="waves__body waves__purple">
-                <article class="intro__content">
-                    <h1 class="intro__title">Adaptive Events for EVERY BODY</h1>
-                    <p class="intro__text">Platypus Adventures is a non-profit organization that creates adaptive opportunities for individuals with disabilities, building community, courage, and confidence one step at a time.</p>
-                </article>
-            </div>
-            <img class="waves__crests bottom-waves"  src="images/purple-waves-bottom.svg" alt="downward wave crests">
-        </section> 
-
+        <intro-waves 
+            intro-title="Adaptive Events for EVERY BODY" 
+            intro-text="Platypus Adventures is a non-profit organization that creates adaptive opportunities for individuals with disabilities, building community, courage, and confidence one step at a time.">
+        </intro-waves>
     </header>
     <main>
         <!-- ADVENTURES SECTION -->
@@ -94,7 +87,7 @@
                 </picture>
                 <article class="adventures__content" >
                     <h2 class="adventures__heading">Tri My Best Triathalon</h2>
-                    <p class="adventures__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur est ex assumenda eaque ullam iste repellat, expedita voluptate incidunt libero accusamus maiores, facere eligendi doloribus dolores error ducimus saepe suscipit?</p>
+                    <p class="adventures__text">Swim, Bike, and Run to the finishline in this adaptive adventure. With buddies on both sides and a community of people cheering along the way, youth of all abilities can gain a sense of pride and accomplishment by participating in our annual Tri My Best Triathalon.</p>
                     <div class="adventures__btn-container">
                         <a class="button button__blue" id="adventure-btn"  href="/platypus-work/tri-my-best">About Tri My Best</a>
                      </div>
@@ -103,7 +96,7 @@
             <div class="adventures__flex" id="bottom-adventure"> 
                 <article class="adventures__content" id="bottom-adventure-content">
                     <h2 class="adventures__heading">Platypus Yoga</h2>
-                    <p class="adventures__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur est ex assumenda eaque ullam iste repellat, expedita voluptate incidunt libero accusamus maiores, facere eligendi doloribus dolores error ducimus saepe suscipit?</p>
+                    <p class="adventures__text">Ground your body in tree pose and experience the comfort of curling up into child's pose during Platypus Yoga. Adapted to fit the needs of every body, Platypus Yoga blends traditional yoga poses with platypus fun to provide a kid friendly yoga experience, good for the whole family.</p>
                     <div class="adventures__btn-container">
                         <a class="button button__blue" id="adventure-btn" href="/platypus-work/platypus-yoga">About Platypus Yoga</a>
                     </div>
@@ -128,7 +121,13 @@
             </div>
         </section>
         <!-- VOLUNTEER DIVIDER BLUE/YELLOW  -->
-       <volunteer-blue-yellow></volunteer-blue-yellow>
+       <waves-divider 
+            background-color="blue" 
+            button-color="yellow" 
+            link="/get-involved/volunteering" 
+            divider-text="Become Part of the Adventure" 
+            btn-text="Volunteer">
+        </waves-divider>
         <!-- STORY SLIDER -->
         <section class="home-section" id="story-slider-section">
             <h2 class="home-section__title">Our Stories</h2>
@@ -244,7 +243,14 @@
             </div>
         </section>
         <!-- DONATE DIVIDER GREEN/PURPLE -->
-        <donate-green-purple></donate-green-purple>
+        <!-- <donate-green-purple></donate-green-purple> -->
+        <waves-divider 
+            background-color="green" 
+            button-color="purple" 
+            link="https://paypal.me/platypusadventures?country.x=US&locale.x=en_US" 
+            divider-text="Help Make the Adventures Happen" 
+            btn-text="Donate">
+        </waves-divider>
         <!-- SUPPORTERS SECTION -->
         <platypus-sponsors></platypus-sponsors>
     </main>
