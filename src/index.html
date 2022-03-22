@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Platypus Adventures, non-profit organization in Greenville, SC - adaptive opportunities for individuals with disabilities.">
     <link rel="stylesheet" href="style.css">
-    <title>Platypus Adventures</title>
+    <title>Platypus Adventures - Adaptive Events for Every Body</title>
 </head>
 <body>
     <header>
@@ -96,7 +96,7 @@
                     <h2 class="adventures__heading">Tri My Best Triathalon</h2>
                     <p class="adventures__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur est ex assumenda eaque ullam iste repellat, expedita voluptate incidunt libero accusamus maiores, facere eligendi doloribus dolores error ducimus saepe suscipit?</p>
                     <div class="adventures__btn-container">
-                        <a class="button button__blue" id="adventure-btn"  href="#">About Tri My Best</a>
+                        <a class="button button__blue" id="adventure-btn"  href="/platypus-work/tri-my-best">About Tri My Best</a>
                      </div>
                 </article>
             </div> 
@@ -105,7 +105,7 @@
                     <h2 class="adventures__heading">Platypus Yoga</h2>
                     <p class="adventures__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur est ex assumenda eaque ullam iste repellat, expedita voluptate incidunt libero accusamus maiores, facere eligendi doloribus dolores error ducimus saepe suscipit?</p>
                     <div class="adventures__btn-container">
-                        <a class="button button__blue" id="adventure-btn" href="#">About Platypus Yoga</a>
+                        <a class="button button__blue" id="adventure-btn" href="/platypus-work/platypus-yoga">About Platypus Yoga</a>
                     </div>
                 </article> 
                 <picture class="adventures__img-container">
@@ -133,7 +133,7 @@
             <div class="waves__body waves__blue">
                 <div class="divider__content">
                     <h2 class="divider__text">Become Part of the Adventure</h2>
-                    <a class="button button__yellow" href="#">Volunteer</a>   
+                    <a class="button button__yellow" href="/get-involved/volunteering">Volunteer</a>   
                 </div>
             </div>
             <img class="waves__crests bottom-waves" src="images/blue-waves-bottom.svg" alt="downward wave crests"> 
@@ -173,7 +173,7 @@
                             <p class="story__slider-text">Emily McGowan and her husband, Chris, have attended plenty of cross country meets for their oldest son, Cort, and soccer matches for their daughter, Laine, in recent years. <br/><br/> Saturday it was time for Cohen – their middle child – to have his turn.</p>
                             <img id="right-quote" src="/images/right-quote.svg" alt="">
                             
-                            <a class="button button__green" id="story-slider-btn" href="#">Read Cohen's Story</a> 
+                            <a class="button button__green" id="story-slider-btn" href="/platypus-stories#cohen">Read Cohen's Story</a> 
                         </article>
                     </div>
                 
@@ -203,7 +203,7 @@
                     <p class="story__slider-text">Our goal was to help Adison complete her first triathlon. None of us knew all that it would take to make that happen. After months of dedicated support and working with Therapy 360 they helped us not only prepare for the triathlon but provided her with what she needed to make that happen.</p>
                     <img id="right-quote" src="/images/right-quote.svg" alt="">
                     
-                    <a class="button button__green" id="story-slider-btn" href="#">Read Adison's Story</a> 
+                    <a class="button button__green" id="story-slider-btn" href="/platypus-stories#adison">Read Adison's Story</a> 
                 </article>
             </div>
             
@@ -235,7 +235,7 @@
                     <p class="story__slider-text">When you have children the milestones seem like they are never going to happen, yet they're happening all around you with everyone else?  But when you finally hit those milestones you wonder where did that time go? That is this moment today.</p>
                     <img id="right-quote" src="/images/right-quote.svg" alt="">
                     
-                    <a class="button button__green" id="story-slider-btn" href="#">Read Grant's Story</a> 
+                    <a class="button button__green" id="story-slider-btn" href="/platypus-stories#grant">Read Grant's Story</a> 
                 </article>
                 </div>
             </div>
@@ -297,38 +297,7 @@
         </section>
     </main>
     <!-- FOOTER -->
-    <section class="footer">
-            <div class="footer__flex">
-                <div class="footer__mobile-flex">
-                    <div class="footer__col">
-                        <h3 class="footer__title">Connect with Us</h3>
-                        <div class="footer__social-btns">
-                            <a href="https://www.instagram.com/platypusadventuresgvl/" target="_blank" rel="noopener"  class="social-btn footer__social-btn" id="left-social-btn">
-                                <img src="./images/instagram_icon.png" alt="multi-colored instagram camera icon" class="footer__social-btn-icon" id="footer-instagram-icon"/>
-                            Instagram
-                            </a>
-                            <a href="https://www.facebook.com/PlatypusAdventuresGVL/" target="_blank" rel="noopener" class="social-btn footer__social-btn">
-                                <img src="./images/facebook_icon.png" alt="purple facebook 'f' icon" class="footer__social-btn-icon" id="footer-facebook-icon"/>
-                                Facebook
-                            </a>
-                        </div>
-                    </div>
-                    <div class="footer__col" id="footer-contact">
-                        <h3 class="footer__title">Contact Us</h3>
-                        <a class="footer__link" href="mailto: info@platypusadventures.org">info@platypusadventures.org</a>
-                    </div>
-                </div>
-            <div class="footer__col">
-                <p class="footer__policy">Platypus Adventures is a nonprofit, tax-exempt charitable organization under Section 501(c)(3) of the Internal Revenue Code. Donations are tax-deductible as allowed by law.  </p>
-                <a class="footer__link" id="privacy-link" href="#">Privacy Policy</a>
-            </div>
-            <div class="footer__col">
-                <a class="footer__logo-link" href="/">
-                    <img class="footer__logo" src="./images/platypus_adventures_logo.svg"  alt="platypus with walking stick in a rainbow gradient circle"/>
-                </a> 
-            </div>
-        </div>
-    </section>
+    <platypus-footer></platypus-footer>
     <script src="script.js"></script>
 </body>
 </html>
