@@ -61,7 +61,7 @@ class PlatypusNavbar extends HTMLElement {
                     </li>
                     <!-- MOBILE BUTTONS -->
                     <li class="nav__list-item mobile-nav__list-item" id="list-item-donate">
-                        <a href="#" class="button" id="mobile-donate-btn">Donate</a>
+                        <a href="https://paypal.me/platypusadventures?country.x=US&locale.x=en_US" class="button" id="mobile-donate-btn">Donate</a>
                     </li>
                     <li class="nav__list-item mobile-nav__list-item" id="mobile-social-btns">
                             <a href="https://www.instagram.com/platypusadventuresgvl/" target="_blank" rel="noopener" class="social-btn social-btn__mobile">
@@ -79,7 +79,7 @@ class PlatypusNavbar extends HTMLElement {
             </div>
             <!-- DESKTOP BUTTONS -->
             <div class="nav__buttons">
-                <a href="#" class="button " id="desktop-donate-btn">Donate</a>
+                <a href="https://paypal.me/platypusadventures?country.x=US&locale.x=en_US" class="button " id="desktop-donate-btn">Donate</a>
                 <a id="triggerId"><img class="nav__btn-access" src="../../images/webp/accessibility_icon.webp"></a>
                 <script>
                     (function(d){
