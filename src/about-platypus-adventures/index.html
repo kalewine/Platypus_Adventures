@@ -10,6 +10,36 @@
 <body>
     <header>
         <platypus-navbar></platypus-navbar>
+        <section class="img-slider" id="target">
+            <picture class="img-slider__img">
+                <source type="image/webp"
+                    srcset="
+                    ../images/webp/tri-my-best-biker-red-tricycle@1x.webp 500w,
+                    ../images/webp/tri-my-best-biker-red-tricycle@2x.webp 768w,
+                    ../images/webp/tri-my-best-biker-red-tricycle@3x.webp 1400w,
+                    ../images/webp/tri-my-best-biker-red-tricycle@4x.webp 1920w"
+                    sizes="
+                    (max-width: 480px) 500px,
+                    (max-width: 768px) 768px,
+                    (max-width: 1024px) 1024px,
+                    100vw"
+                >
+                <img    
+                    srcset="
+                    ../images/tri-my-best-biker-red-tricycle@1x.jpg 500w,
+                    ../images/tri-my-best-biker-red-tricycle@2x.jpg 768w,
+                    ../images/tri-my-best-biker-red-tricycle@3x.jpg 1400w,
+                    ../images/tri-my-best-biker-red-tricycle@4x.jpg 1920w"
+                    sizes="
+                    (max-width: 480px) 500px,
+                    (max-width: 768px) 768px,
+                    (max-width: 1024px) 1024px,
+                    100vw"
+                    src="../images/tri-my-best-biker-red-tricycle@4x.jpg" 
+                    alt="tri my best biker in blue helmet rides red tricycle"
+                >
+            </picture>
+        </section>
         <intro-waves 
             intro-title="ABOUT US" 
             intro-text="Platypus Adventures is a non-profit oraganization that exists to provide activites and events for youth with special needs.">

@@ -10,6 +10,36 @@
 <body>
     <header>
         <platypus-navbar></platypus-navbar>
+        <section class="img-slider" id="target">
+            <picture class="img-slider__img">
+                <source type="image/webp"
+                    srcset="
+                    ../images/webp/tri-my-best-runner-and-buddies@1x.webp 500w,
+                    ../images/webp/tri-my-best-runner-and-buddies@2x.webp 768w,
+                    ../images/webp/tri-my-best-runner-and-buddies@3x.webp 1400w,
+                    ../images/webp/tri-my-best-runner-and-buddies@4x.webp 1920w"
+                    sizes="
+                    (max-width: 480px) 500px,
+                    (max-width: 768px) 768px,
+                    (max-width: 1024px) 1024px,
+                    100vw"
+                >
+                <img    
+                    srcset="
+                    ../images/tri-my-best-runner-and-buddies@1x.jpg 500w,
+                    ../images/tri-my-best-runner-and-buddies@2x.jpg 768w,
+                    ../images/tri-my-best-runner-and-buddies@3x.jpg 1400w,
+                    ../images/tri-my-best-runner-and-buddies@4x.jpg 1920w"
+                    sizes="
+                    (max-width: 480px) 500px,
+                    (max-width: 768px) 768px,
+                    (max-width: 1024px) 1024px,
+                    100vw"
+                    src="../images/tri-my-best-runner-and-buddies@4x.jpg" 
+                    alt="tri my best runner cheered on by volunteers"
+                >
+            </picture>
+        </section>
         <intro-waves 
             intro-title="GET INVOLVED" 
             intro-text="We would love for you to get involved with Platypus Adventures and bring joy, accomplishment, and pride to your community.">

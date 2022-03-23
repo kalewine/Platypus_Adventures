@@ -132,6 +132,14 @@ header {
     /* border: solid blue; */
 }
 
+.header__waves {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
 .waves__body {
     width: 100%;
     height: fit-content; 
@@ -143,10 +151,24 @@ header {
     /* border: solid green; */
 }
 
+#header-waves {
+    padding: 8rem 4rem 4rem 4rem;
+}
+
+.waves__paragraph {
+    max-width: 550px;
+    padding: 0.8rem 0 2rem 0;
+    font-family: var(--body-font);
+}
+
 
 .waves__purple {
     background-color: var(--purple);
-   
+    color: #fff;
+}
+
+.waves__light-purple {
+    background-color: var(--light-purple); 
 }
 
 .waves__blue {
@@ -261,6 +283,7 @@ header {
 .divider__text {
     font-family: var(--header-font);
     font-size: 1.5rem;
+    font-weight: 400;
     margin-bottom: 1rem;
     text-align: center;
 }
