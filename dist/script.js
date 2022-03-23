@@ -93,11 +93,11 @@ class PlatypusFooter extends HTMLElement{connectedCallback(){this.innerHTML=`<fo
                     </li>
                     <li class="nav__list-item mobile-nav__list-item" id="mobile-social-btns">
                             <a href="https://www.instagram.com/platypusadventuresgvl/" target="_blank" rel="noopener" class="social-btn social-btn__mobile">
-                            <img src="images/instagram_icon.png" alt="multi-colored instagram camera icon" class="social-btn__icon" id="instagram -icon"/>
+                            <img src="../../images/instagram_icon.png" alt="multi-colored instagram camera icon" class="social-btn__icon" id="instagram -icon"/>
                             Instagram
                         </a>
                         <a href="https://www.facebook.com/PlatypusAdventuresGVL/" target="_blank" rel="noopener" class="social-btn social-btn__mobile">
-                            <img src="images/facebook_icon.png" alt="purple facebook 'f' icon" class="social-btn__icon" id="facebook-icon"/>
+                            <img src="../../images/facebook_icon.png" alt="purple facebook 'f' icon" class="social-btn__icon" id="facebook-icon"/>
                             Facebook
                         </a>
                     </li>

@@ -72,10 +72,10 @@ let browsersyncReload = (cb) => {
 
 // Watch task
 gulp.task('watchTask', () => {
-    gulp.watch('src/*.html', gulp.series('html', browsersyncReload))
-    gulp.watch(['src/styles/**/*.css', 'src/scripts/**/*.js'], gulp.series('css', 'js', browsersyncReload))
-    gulp.watch(['src/images/*.jpg','src/images/*.pgn'], gulp.series('webp', browsersyncReload))
-    gulp.watch('src/images/*.svg', browsersyncReload)
+    gulp.watch('src/**/*.html', gulp.series('html', browsersyncReload))
+    gulp.watch('src/styles/**/*.css', gulp.series('css', browsersyncReload))
+    // gulp.watch(['src/images/*.jpg','src/images/*.pgn'], gulp.series('webp', browsersyncReload))
+    // gulp.watch('src/images/*.svg', browsersyncReload)
 })
 
 exports.default = gulp.series('html', 'css', 'js', 'imagemin', 'webp', browsersyncServe, 'watchTask')
