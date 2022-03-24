@@ -310,9 +310,6 @@
         margin: 0 1rem 0 0;
     }
 
-    .nav__list-link {
-        pointer-events: none;
-    }
 
     .nav__list-item {
         font-size: 1rem;
