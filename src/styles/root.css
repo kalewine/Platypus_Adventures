@@ -245,30 +245,7 @@ header {
      }
  }
 
-/* Potrait images with buttons */
-.portrait__positioner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.portrait__img {
-    border-radius: 50px;
-    margin-bottom: 0.3rem;
-}
-
-@media only screen  and (max-width: 1024px){ 
-
-    .portrait__positioner {
-        margin-bottom: 3rem;
-     }
-
-     .portrait__img {
-        border-radius: 30px;
-     }
-
-}
 
 /* Divider styles */
 .divider__content {
