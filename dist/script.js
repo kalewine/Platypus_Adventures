@@ -41,7 +41,7 @@ class PlatypusFooter extends HTMLElement{connectedCallback(){this.innerHTML=`<fo
                 <ul class="nav__list" id="nav-list">
                     <li class="nav__list-item ">
                         <div class="nav__toggle-positioner">
-                            <a href="/platypus-work" class="nav__list-link ">Our Work</a> 
+                            <a href="/platypus-work/" class="nav__list-link ">Our Work</a> 
                             <div class="nav__dropdown-toggle" onclick="toggleDropdown(this, 'work')">
                                 <img class="nav__dropdown-toggle-icon"  src="../../images/open_menu_icon.png"  />
                             </div>
@@ -54,7 +54,7 @@ class PlatypusFooter extends HTMLElement{connectedCallback(){this.innerHTML=`<fo
                     </li>
                     <li class="nav__list-item ">
                         <div class="nav__toggle-positioner">
-                            <a href="/platypus-stories" class="nav__list-link ">Our Stories</a>
+                            <a href="/platypus-stories/" class="nav__list-link ">Our Stories</a>
                             <div class="nav__dropdown-toggle" id="stories-toggle">
                                 <img class="nav__dropdown-toggle-icon"  src="../../images/open_menu_icon.png"  />
                             </div>
@@ -62,7 +62,7 @@ class PlatypusFooter extends HTMLElement{connectedCallback(){this.innerHTML=`<fo
                     </li>
                     <li class="nav__list-item ">
                         <div class="nav__toggle-positioner">
-                            <a href="/about-platypus-adventures" class="nav__list-link ">About Us</a>  
+                            <a href="/about-platypus-adventures/" class="nav__list-link ">About Us</a>  
                             <div class="nav__dropdown-toggle"onclick="toggleDropdown(this, 'about')">
                                 <img class="nav__dropdown-toggle-icon"  src="../../images/open_menu_icon.png"  />
                             </div>
@@ -75,7 +75,7 @@ class PlatypusFooter extends HTMLElement{connectedCallback(){this.innerHTML=`<fo
                     </li>
                     <li class="nav__list-item ">
                         <div class="nav__toggle-positioner">
-                            <a href="/get-involved" class="nav__list-link ">Get Involved</a>
+                            <a href="/get-involved/" class="nav__list-link ">Get Involved</a>
                             <div class="nav__dropdown-toggle"onclick="toggleDropdown(this, 'involved')">
                                 <img class="nav__dropdown-toggle-icon" src="../../images/open_menu_icon.png"  />
                             </div>

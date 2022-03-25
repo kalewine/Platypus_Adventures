@@ -66,5 +66,9 @@
         grid-row: 1;
     }
 
+    .stories__text {
+        padding: 0 0 0 0.5rem;
+        
+    }
 
 }

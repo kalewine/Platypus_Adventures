@@ -46,6 +46,44 @@
         </intro-waves>
     </header>
     <main>
+        <section class="about">
+            <h2 class="about__header">The Adaptive Fun Makers</h2>
+            <div class="about__grid">
+                <picture class="about__img-container" >
+                    <source type="image/webp"
+                        srcset="
+                        ../images/webp/tri-my-best-runner-smiles-runs-with-buddies@1x.webp 480w, 
+                        ../images/webp/tri-my-best-runner-smiles-runs-with-buddies@2x.webp 700w,
+                        ../images/webp/tri-my-best-runner-smiles-runs-with-buddies@3x.webp 1400w"
+                        sizes="
+                        (max-width: 1025px) 90vw, 
+                        50vw"
+                    >
+                    <img   
+                        class="about__img" 
+                        srcset="
+                        ../images/tri-my-best-runner-smiles-runs-with-buddies@1x.jpg 480w, 
+                        ../images/tri-my-best-runner-smiles-runs-with-buddies@2x.jpg 700w,
+                        ../images/tri-my-best-runner-smiles-runs-with-buddies@3x.jpg 1400w"
+                        sizes="(max-width: 1025px) 90vw, 50vw"
+                        src="../images/tri-my-best-runner-smiles-runs-with-buddies@3x.jpg" 
+                        alt="tri my best participant smiling, runs with her two buddies"
+                    >
+                </picture>
+                <div class="about__card-flex">
+                    <div class="about__card" id="about-mission-card">
+                        <h3 class="about__card-title">Our Mission and Values</h3>
+                        <p class="about__card-text">We are taking steps towards inclusion by creating adaptive opportunities for all abilities.</p>
+                        <a href="/about-platypus-adventures/mission-and-values" class="button button__yellow" id="about-mission-btn">Learn More</a>
+                    </div>
+                    <div class="about__card" id="about-leadership-card">
+                        <h3 class="about__card-title">Our Leadership</h3>
+                        <p class="about__card-text">Meet our leadership team - the adventure planners and  adaptive fun makers!</p>
+                        <a href="/about-platypus-adventures/platypus-leadership" class="button button__yellow" id="about-leadership-btn">Meet Our Team</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <waves-divider 
             background-color="yellow" 
             button-color="purple" 
