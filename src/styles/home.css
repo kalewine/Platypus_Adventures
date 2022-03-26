@@ -9,7 +9,10 @@
     /* border: solid red; */
 }
 
-
+.img-slider img {
+    width: 100%;
+    object-fit: fill;
+}
 
 .slider__arrows {
     display: flex;
@@ -73,7 +76,25 @@
 @media only screen and (max-width: 481px){
     .img-slider {
         margin-top: 4rem;
+        height: 50vh;
+        min-height: 100px;
     }
+
+
+    .img-slider img {
+       height: 100%; 
+       width: auto;
+       margin-left: -30%;
+    }
+
+    #home-img {
+        margin-left: -15%;
+        
+    } 
+
+    #stories-img{
+        margin-left: -10%;
+    } 
 
     #img-slider-arrows {
         display: none;

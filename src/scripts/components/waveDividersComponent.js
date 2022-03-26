@@ -1,7 +1,7 @@
 class IntroWaves extends HTMLElement {
     constructor(){
         super();
-        
+
         const introSection = document.createElement('section');
         introSection.setAttribute('class', 'waves__container');
         introSection.setAttribute('id', 'waves-intro');

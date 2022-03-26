@@ -124,7 +124,7 @@ header {
 /* Waves divider */
 .waves__container {
     position: relative;
-    bottom: 0;
+    bottom: 0rem;
     width: 100%;
     height: auto;
     z-index: 1;
@@ -221,6 +221,10 @@ header {
     .intro__title {
          font-size: 1.2rem;
      } 
+
+     #waves-intro {
+         bottom: 2rem;
+     }
      
  
  }
