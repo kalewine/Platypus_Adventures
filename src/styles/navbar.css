@@ -288,7 +288,7 @@
      height: 8rem;
  }
 
-@media only screen  and (max-width: 1025px){
+@media only screen  and (max-width: 1024px){
     #desktop-donate-btn {
         height: 2rem;
         margin: 0 1rem 0.25rem 0;   

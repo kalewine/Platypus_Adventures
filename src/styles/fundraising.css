@@ -51,7 +51,7 @@
     width: auto; 
 }
 
-@media only screen  and (max-width: 1025px){ 
+@media only screen  and (max-width: 1024px){ 
     .fundraise {
         flex-direction: column;
     }
