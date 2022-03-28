@@ -1,7 +1,7 @@
 class PlatypusFooter extends HTMLElement{connectedCallback(){this.innerHTML=`<footer class="footer">
         <div class="footer__flex">
             <div class="footer__mobile-flex">
-                <div class="footer__col">
+                
                     <h3 class="footer__title">Connect with Us</h3>
                     <div class="footer__social-btns">
                         <a href="https://www.instagram.com/platypusadventuresgvl/" target="_blank" rel="noopener"  class="social-btn footer__social-btn" id="left-social-btn">
@@ -12,9 +12,9 @@ class PlatypusFooter extends HTMLElement{connectedCallback(){this.innerHTML=`<fo
                             <img src="../../images/facebook_icon.png" alt="purple facebook 'f' icon" class="footer__social-btn-icon" id="footer-facebook-icon"/>
                             Facebook
                         </a>
-                    </div>
+                    
                 </div>
-                <div class="footer__col" id="footer-contact">
+                <div id="footer-contact">
                     <h3 class="footer__title">Contact Us</h3>
                     <a class="footer__link" href="mailto: info@platypusadventures.org">info@platypusadventures.org</a>
                 </div>
@@ -22,8 +22,8 @@ class PlatypusFooter extends HTMLElement{connectedCallback(){this.innerHTML=`<fo
         <div class="footer__col">
             <p class="footer__policy">Platypus Adventures is a nonprofit, tax-exempt charitable organization under Section 501(c)(3) of the Internal Revenue Code. Donations are tax-deductible as allowed by law.  </p>
             <a class="footer__link" id="privacy-link" href="#">Privacy Policy</a>
-        </div>
-        <div class="footer__col">
+       
+       
             <a class="footer__logo-link" href="/">
                 <img class="footer__logo" src="../../images/platypus_adventures_logo.svg"  alt="platypus with walking stick in a rainbow gradient circle"/>
             </a> 
