@@ -1,0 +1,43 @@
+.leadership {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.leader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 375px;
+    font-family: var(--body-font);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.leader__headshot {
+    border-radius: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.leader__name {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.leader__text {
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+@media only screen  and (max-width: 740px){
+    .leader__text {
+        margin-left: 0rem;
+        font-size: 0.8rem;
+    }
+    
+}
