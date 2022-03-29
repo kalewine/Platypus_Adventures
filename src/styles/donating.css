@@ -111,3 +111,72 @@
         max-width: 400px;
     }
 }
+
+/* Donate cards */
+.donate-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.donate-cards__header {
+    margin: 1rem auto 0 auto;
+    font-family: var(--header-font);
+}
+
+.donate-cards__flex {
+    display: flex;
+    justify-content: space-evenly;
+    margin:3rem 0;
+    flex-wrap: wrap;
+}
+
+.donate-cards__card {
+    position: relative;
+    width: fit-content;
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+
+.donate-cards__card-band {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    text-align: center;
+}
+
+.donate-cards__card-band-lft {
+    width: 35%;
+    height: 100%;
+    background-color: #D068FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate-cards__card-band-rt {
+    width: 65%;
+    height: 100%;
+    background-color: #ECC1FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate-cards__card-band-price {
+    font-family: var(--header-font);
+    font-size: 4vw;
+    padding-left: 2rem;
+}
+
+.donate-cards__card-band-text{
+    font-family: var(--body-font);
+    font-size: 1.7vw;
+    max-width: 80%;
+    padding: 0.5rem;
+}
