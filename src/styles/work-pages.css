@@ -1,0 +1,90 @@
+.tri {
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: -2rem;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 100%;
+    /* border: blue solid; */
+}
+
+.tri__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 150%;
+    margin: -15% 0;
+}
+
+#yoga-info{
+    background-color: var(--yellow);
+}
+
+#tri-info{
+    background-color: var(--blue);
+}
+
+.tri__left-title {
+    font-family: var(--header-font);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.tri__left-text {
+    font-family: var(--body-font);
+    text-align: center;
+    font-weight: 600;
+}
+
+.tri__left-text a{
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--purple);
+    text-align: center;
+}
+
+.tri__center{
+    width: 50%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem 4rem 4rem;
+    /* border: solid blue; */
+}
+
+.tri__center-header {
+    font-size: 2rem;
+    font-family: var(--header-font);
+    margin-bottom: 3rem;
+}
+
+.tri__center-subheader {
+    font-size: 1.2rem;
+    font-family: var(--body-font);
+    font-style: italic;
+    margin: -2rem 0 2rem 0;
+}
+
+.tri__center-text {
+    font-family: var(--body-font);
+    max-width: 600px;
+}
+
+.tri__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    /* border: solid red */
+}
+
+.tri__logo{
+    max-height: 300px;
+}
