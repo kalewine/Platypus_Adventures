@@ -145,6 +145,8 @@
     margin-bottom: 6px;
     box-shadow: 0px 6px 0px var(--purple);
     transition: transform 200ms ease;
+    max-width: 500px;
+    max-height: 400px;
 }
 
 .donate-cards__card a {
@@ -191,13 +193,13 @@
 
 .donate-cards__card-band-price {
     font-family: var(--header-font);
-    font-size: 4vw;
+    font-size: 2.5vw;
     padding-left: 2rem;
 }
 
 .donate-cards__card-band-text{
     font-family: var(--body-font);
-    font-size: 1.7vw;
+    font-size: 1.2vw;
     max-width: 80%;
     padding: 0.5rem;
 }
@@ -214,6 +216,7 @@
     .donate-cards__card-band-price{
         padding-left: 1rem;
     }
+
 }
 
 @media only screen  and (max-width: 740px){

@@ -20,7 +20,7 @@
 
 .footer__privacy {
     align-self: center;
-    margin-left: 0.5rem;
+    /* margin-left: 0.5rem; */
 }
 
 .footer__flex {
@@ -44,6 +44,7 @@
     justify-content: space-evenly;
     align-items: flex-start;
     margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
     /* border: solid orange; */
 }
 
@@ -163,7 +164,7 @@
     margin-right: 0.3rem;
 }
 
-@media only screen and (max-width: 1025px){
+@media only screen and (max-width: 1024px){
     .footer__flex {
         width: 100%;
     }
