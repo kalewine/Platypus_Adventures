@@ -38,10 +38,11 @@
     font-family: var(--body-font);
     text-align: center;
     font-weight: 600;
+    padding: 0.3rem;
 }
 
 .tri__left-text a{
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     color: var(--purple);
     text-align: center;
@@ -54,14 +55,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 2rem 4rem 4rem;
+    padding: 2rem 1rem 4rem 3rem;
     /* border: solid blue; */
 }
 
 .tri__center-header {
     font-size: 2rem;
     font-family: var(--header-font);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .tri__center-subheader {
@@ -73,7 +74,7 @@
 
 .tri__center-text {
     font-family: var(--body-font);
-    max-width: 600px;
+    max-width: 550px;
 }
 
 .tri__right {
@@ -85,6 +86,63 @@
     /* border: solid red */
 }
 
+#platypus {
+    padding-right: 1rem;
+}
+
 .tri__logo{
     max-height: 300px;
+    width: 80%;
+}
+
+@media only screen  and (max-width: 600px){
+    .tri {
+        flex-direction: column-reverse;
+        height: auto;
+        margin-bottom: 0rem;
+    }
+
+    #yoga-info{
+        background-color: #fff;
+    }
+    
+    #tri-info{
+        background-color: #fff;
+    }
+
+    .tri__center-header {
+        display: none;
+    }
+
+    .tri__right, .tri__left, .tri__center {
+        width: 100%;
+    }
+
+    .tri__center-subheader {
+        margin: 0 0 1rem 0;
+    }
+
+    .tri__right{
+        order: 3;
+    }
+
+    .tri__left {
+        order: 2;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .tri__left-title {
+        display: none;
+    }
+
+    .tri__center {
+        order: 1;
+        padding: 0;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .tri__center-text {
+        padding: 0rem 2rem;
+
+    }
 }
