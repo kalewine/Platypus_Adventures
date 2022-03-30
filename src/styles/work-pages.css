@@ -1,3 +1,4 @@
+/* work pages headers */
 .tri {
     position: relative;
     margin-top: 5rem;
@@ -144,5 +145,60 @@
     .tri__center-text {
         padding: 0rem 2rem;
 
+    }
+}
+
+/* yoga page benefits */
+.benefits {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    font-family: var(--body-font);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.benefits__text {
+    padding: 2rem 2.5rem 2rem 1rem;
+    margin-left: 2rem;
+    width: 100%;
+    max-width: 600px;
+    min-width: 400px;
+    /* border: solid green; */
+}
+
+
+
+.benefits__title {
+    margin-bottom: 2rem;
+}
+
+
+.benefits ul li {
+    list-style: circle;
+    margin-left: 2rem;
+}
+
+.benefits__img-container {
+    margin: 0 auto;
+}
+
+.benefits__img {
+    border-radius: 50px;
+    min-width: 500px;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+@media only screen  and (max-width: 740px){
+    .benefits__img {
+        min-width: 250px;
+    }
+
+    .benefits ul li {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
