@@ -234,16 +234,14 @@
     height: auto;
 }
 
-.tri-sponsors__sponsor-lg{
-    width: 175px;
-}
-
 #little-white-house {
     justify-self: flex-start;
+    width: 225px;
 }
 
 #gfl {
     justify-self: flex-end;
+    width: 200px;
 }
 
 .tri-sponsors__sponsor-sm {
@@ -262,11 +260,13 @@
 
     #gfl {
         justify-self: center;
+        width: 140px;
     }
 
     #little-white-house {
        grid-row: 2;
        justify-self: center;
+       width: 160px;
     }
 
     #last-sponsor{
