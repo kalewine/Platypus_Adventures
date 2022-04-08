@@ -64,18 +64,23 @@
             <img class="thumbnail" onclick="openLightbox(24)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
         </section>
         <section id="lightbox">
-            <img id="close-lightbox" onclick="closeLightbox()" src="../../images/yellow-x.svg" alt="yellow 'x' icon">
-            <img  class="slider__arrow lightbox__arrow" onclick='changeImage(-1)' src="../../images/left-yellow-arrow.svg" alt="chunky left yellow arrow">
-            
-            <picture class="lightbox__img-container" >
+           <div id="lightbox-positioner">
+                <img id="close-lightbox" onclick="closeLightbox()" src="../../images/yellow-x.svg" alt="yellow 'x' icon">
+                <img  class="slider__arrow lightbox__arrow" onclick='changeImage(-1)' src="../../images/left-yellow-arrow.svg" alt="chunky left yellow arrow">
+                <picture class="lightbox__img-container" >
+                    <source id="lightbox-source" type="image/webp"
+                    sizes="80vw">
+                    <img id="lightbox-img" class="lightbox__img"
+                    sizes="80vw" />
+                </picture>
+                <img class="slider__arrow lightbox__arrow" onclick='changeImage(1)' src="../../images/right-yellow-arrow.svg" alt="chunky right yellow arrow">
+            </div>
+            <div id="lightbox__mobile-selection">
+                <img  class="slider__arrow lightbox__arrow mobile-arrow" onclick='changeImage(-1)' src="../../images/left-yellow-arrow.svg" alt="chunky left yellow arrow">
                 <p id="lightbox-index">/25</p>
-                <source id="lightbox-source" type="image/webp"
-                sizes="80vw">
-                <img id="lightbox-img" class="lightbox__img"
-                sizes="80vw" />
-            </picture>
-            <img class="slider__arrow lightbox__arrow" onclick='changeImage(1)' src="../../images/right-yellow-arrow.svg" alt="chunky right yellow arrow">
-        </section>
+                <img class="slider__arrow lightbox__arrow mobile-arrow" onclick='changeImage(1)' src="../../images/right-yellow-arrow.svg" alt="chunky right yellow arrow">
+            </div>
+            </section>
         <section class="tri-sponsors">
             <h4 class="tri-sponsors__header">Thank you to our Tri My Best sponsors:</h4>
             <div class="tri-sponsors__grid">

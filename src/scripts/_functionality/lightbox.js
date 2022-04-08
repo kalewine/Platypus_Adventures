@@ -33,8 +33,11 @@ let length = Object.keys(srcset).length;
 let currentImage; 
 
 const openLightbox = (n) => {
-    document.querySelector("body").classList.toggle('is-active')
+    let newPosition = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${newPosition}px`;
     document.getElementById('lightbox').classList.toggle('is-open');
+    document.getElementById('lightbox').style.top = `${newPosition}px`;
     displayImg(n)
 }
 
@@ -65,6 +68,9 @@ const displayImg = (n) => {
 }
 
 const closeLightbox = () => {
+    const scrollY = document.body.style.top;
     document.getElementById('lightbox').classList.toggle('is-open');
-    document.querySelector("body").classList.toggle('is-active');
+    document.body.style.position = '';
+    document.body.style.top =``;
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
 }
