@@ -50,7 +50,7 @@ gulp.task('imagemin', () => {
 
 // Convert images to webp
 gulp.task('webp', () => {
-    return gulp.src(['src/images/*.jpg', 'src/images/*.png' ])
+    return gulp.src(['src/images/*.jpg', 'src/images/*.jpeg', 'src/images/*.png' ])
         .pipe(webp())
         .pipe(gulp.dest('dist/images/webp'))
 });
