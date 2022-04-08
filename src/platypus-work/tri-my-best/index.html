@@ -10,8 +10,6 @@
 <body>
     <header>
         <platypus-navbar></platypus-navbar>
-    </header>
-    <main >
         <section class="tri" id="target">
             <aside class="tri__left" id="tri-info">
                 <h3 class="tri__left-title">Tri My Best 2022</h3>
@@ -28,6 +26,8 @@
                 <img src="../../images/tri-my-best-logo.svg" alt="" class="tri__logo">
             </section>
         </section>
+    </header>
+    <main>
         <waves-divider
             background-color="purple" 
             button-color="green" 
@@ -36,6 +36,46 @@
             divider-paragraph="View our Run Sign Up page for information about becoming an athelete or volunteer for our next Tri My Best Adaptive Triathalon." 
             btn-text="Visit Event Page">
         </waves-divider>
+        <section class="thumbnails">
+            <img class="thumbnail" onclick="openLightbox(0)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(1)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(2)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(3)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(4)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(5)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(6)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(7)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(8)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(9)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(10)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(11)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(12)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(13)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(14)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(15)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(16)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(17)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(18)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(19)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(20)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(21)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(22)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(23)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+            <img class="thumbnail" onclick="openLightbox(24)" src="../../images/tri-my-best-lightbox-thumbnail.jpg" alt="">
+        </section>
+        <section id="lightbox">
+            <img id="close-lightbox" onclick="closeLightbox()" src="../../images/yellow-x.svg" alt="yellow 'x' icon">
+            <img  class="slider__arrow lightbox__arrow" onclick='changeImage(-1)' src="../../images/left-yellow-arrow.svg" alt="chunky left yellow arrow">
+            
+            <picture class="lightbox__img-container" >
+                <p id="lightbox-index">/25</p>
+                <source id="lightbox-source" type="image/webp"
+                sizes="80vw">
+                <img id="lightbox-img" class="lightbox__img"
+                sizes="80vw" />
+            </picture>
+            <img class="slider__arrow lightbox__arrow" onclick='changeImage(1)' src="../../images/right-yellow-arrow.svg" alt="chunky right yellow arrow">
+        </section>
         <section class="tri-sponsors">
             <h4 class="tri-sponsors__header">Thank you to our Tri My Best sponsors:</h4>
             <div class="tri-sponsors__grid">

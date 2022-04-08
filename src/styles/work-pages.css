@@ -1,4 +1,8 @@
+.tri__page {
+    position: relative;
+}
 /* work pages headers */
+
 .tri {
     position: relative;
     margin-top: 5rem;
@@ -206,6 +210,7 @@
 /* Tri My Best sponsor section */
 .tri-sponsors {
     width: 100%;
+    margin-top: 4rem;
 }
 
 .tri-sponsors__header {
@@ -217,7 +222,7 @@
 }
 
 .tri-sponsors__grid {
-    margin: 2rem auto 0 auto;
+    margin: 0.5rem auto 0 auto;
     max-width: 1000px;
     display: grid;
     gap: 1rem;
@@ -228,10 +233,20 @@
     /* border: orchid solid; */
 }
 
+.tri-sponsors__sponsor-mn, .tri-sponsors__sponsor-lg, .tri-sponsors__sponsor-sm {
+    cursor: pointer;
+    transition: transform 200ms ease;
+}
+
+.tri-sponsors__sponsor-mn:hover, .tri-sponsors__sponsor-lg:hover , .tri-sponsors__sponsor-sm:hover {
+    transform: scale(1.07);
+}
+
 .tri-sponsors__sponsor-mn {
     grid-column: span 3;
     width: 350px;
     height: auto;
+    
 }
 
 #little-white-house {
@@ -296,4 +311,78 @@
     }
 
   
+}
+
+/* Tri My Best Lightbox */
+.thumbnails {
+    position: relative;
+    display: grid;
+    justify-self: center;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-auto-flow: row;
+    place-items: center;
+    margin: 1rem auto 2rem auto;
+}
+
+
+.thumbnail {
+    width: 100%;
+    cursor: pointer;
+    justify-self: center;
+}
+
+.thumbnail:hover { 
+  box-shadow: 0 0 0 4px var(--yellow);
+}
+
+#lightbox {
+    display: none;
+}
+
+#lightbox.is-open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 20;
+}
+
+#lightbox-index {
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--body-font);
+}
+
+#close-lightbox {
+    position: absolute;
+    top: 0; 
+    right: 0;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.lightbox__arrow {
+    --btn-shadow-color: var(--dark-yellow);
+    margin: 0 2rem;
+}
+
+.lightbox__img {
+    width: auto;
+    max-height: 500px;
+}
+
+@media only screen  and (max-width: 640px){
+    .thumbnails {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    }
+
+    
 }
