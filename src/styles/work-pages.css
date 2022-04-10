@@ -403,21 +403,22 @@
 
 
 @media only screen  and (max-width: 1024px){
-    .slider__arrow{
+    /* .slider__arrow{
         height: 3rem;
         filter: drop-shadow(0 5px 0 var(--btn-shadow-color));
-    }
+    } */
+
+    .lightbox__arrow {
+        display: none;
+      }
+      
+      .mobile-arrow {
+          display: flex;
+      }
 }
 @media only screen  and (max-width: 640px){
     .thumbnails {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
     }
 
-    .lightbox__arrow {
-      display: none;
-    }
-    
-    .mobile-arrow {
-        display: flex;
-    }
 }

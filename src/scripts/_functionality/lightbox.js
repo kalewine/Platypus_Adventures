@@ -94,10 +94,6 @@ const srcset = {
     23: {
         src: 'tri-my-best-particpant-rides-on-buddys-back',
         alt: 'tri my best participant rides on buddy\'s back'
-    },
-    24: {
-        src: 'tri-my-best-swimmer-with-pool-noodle-smiles',
-        alt: 'tri my best swimmer hugs pool noodle and smiles'
     }
 }
 
