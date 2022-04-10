@@ -1,31 +1,103 @@
 const srcset = {
     0: {
-        src: 'tri-my-best-runner-smiles-runs-with-buddies',
-        alt: 'smiling athlete in wheelchair wheeled across finish line'
+        src: 'tri-my-best-runner-and-buddies-approach-finishline',
+        alt: 'tri my best athlete and buddies run towards finishline'
     }, 
     1: {
-        src: 'athlete-rides-red-bike-helped-by-buddies', 
-        alt: 'tri my best athlete rides assisted bike with support of buddies'
+        src: 'tri-my-best-biker-red-helmet-smiles', 
+        alt: 'tri my best biker in red helmet smiles'
     }, 
     2: {
-        src: 'tri-my-best-biker-green-helmet', 
-        alt: 'tri my best athlete rides assisted bike with support of buddies'
+        src: 'tri-my-best-partcipant-holds-finish-strong-sign', 
+        alt: 'tri my best participant holds finish strong sign'
     }, 
     3: {
-        src: '',
-        alt: ''
+        src: 'tri-my-best-biker-in-tutu-bikes-with-buddies',
+        alt: 'tri my best biker in tutu bikes as buddies jog alongside'
     }, 
     4: {
-        src: '',
-        alt: ''
+        src: 'tri-my-best-swimmer-smiles-at-camera',
+        alt: 'tri my best swimmer smiles at the camera'
     },
     5: {
-        src: '',
-        alt: ''
+        src: 'tri-my-best-runner-breaks-finishline-tape',
+        alt: 'tri my best runner breaks yellow finishline tape'
     },
     6: {
-        src: '',
-        alt: ''
+        src: 'tri-my-best-swimmer-holds-onto-pool-wall',
+        alt: 'tri my best swimmer holds onto pool wall'
+    },
+    7: {
+        src: 'tri-my-best-runner-triumphantly-crosses-finishline',
+        alt: 'tri my best runner triumphantly crosses finishline'
+    },
+    8: {
+        src: 'tri-my-best-participant-poses-with-mom-and-dad',
+        alt: 'tri my best participant poses with mom and dad'
+    },
+    9: {
+        src: 'tri-my-best-buddies-assist-participant-to-finishline',
+        alt: 'tri my best buddies assist participant to finishline'
+    },
+    10: {
+        src: 'tri-my-best-runner-with-buddies-pushes-to-the-finishline',
+        alt: 'tri my best runner with buddies pushes to the finishline'
+    },
+    11: {
+        src: 'tri-my-best-biker-bikes-beside-buddy',
+        alt: 'tri my best biker bikes beside buddy'
+    },
+    12: {
+        src: 'tri-my-best-participant-receiving-medal',
+        alt: 'tri my best participant receives medal from volunteer'
+    },
+    13: {
+        src: 'tri-my-best-swimmer',
+        alt: 'tri my best swimmer in mid stroke'
+    },
+    14: {
+        src: 'tri-my-best-participant-holds-certificate',
+        alt: 'tri my best participant poses holding certificate'
+    },
+    15: {
+        src: 'tri-my-best-swimmer-with-pink-pool-noodle-smiles',
+        alt: 'tri my best swimmer with pink pool noodle smiles at the camera'
+    },
+    16: {
+        src: 'tri-my-best-partcipant-holds-the-hand-of-volunteer',
+        alt: 'tri my best partcipant hold the hand of volunteer'
+    },
+    17: {
+        src: 'tri-my-best-runner-crosses-finishline-buddies-behind',
+        alt: 'tri my best runner crosses finishline with buddies behind'
+    },
+    18: {
+        src: 'tri-my-best-swimmer-touches-wall',
+        alt: 'tri my best swimmer touches wall'
+    },
+    19: {
+        src: 'tri-my-best-runner-runs-with-family',
+        alt: 'tri my best runner runs with family'
+    },
+    20: {
+        src: 'tri-my-best-runner-proudly-crosses-finishline',
+        alt: 'tri my best runner proudly crosses finishline'
+    },
+    21: {
+        src: 'tri-my-best-participant-Ellie-poses-with-family',
+        alt: 'tri my best participant Ellie poses with family'
+    },
+    22: {
+        src: 'tri-my-best-swimmer-delighted-while-swimming',
+        alt: 'tri my best swimmer delighted while swimming'
+    },
+    23: {
+        src: 'tri-my-best-particpant-rides-on-buddys-back',
+        alt: 'tri my best participant rides on buddy\'s back'
+    },
+    24: {
+        src: 'tri-my-best-swimmer-with-pool-noodle-smiles',
+        alt: 'tri my best swimmer hugs pool noodle and smiles'
     }
 }
 
@@ -57,8 +129,8 @@ const changeImage = (dir) => {
 const displayImg = (n) => {
     let lightboxSrc = document.getElementById("lightbox-source")
     let lightboxImg = document.getElementById("lightbox-img")
-    lightboxSrc.setAttribute('srcset', `../../images/webp/${srcset[n].src}@1x.webp 500w, ../../images/webp/${srcset[n].src}@2x.webp 768w, ../../images/webp/${srcset[n].src}@3x.webp 1400w`);
-    lightboxImg.setAttribute('srcset', `../../images/webp/${srcset[n].src}@1x.jpg 500w, ../../images/${srcset[n].src}@2x.jpg 768w, ../../images/webp/${srcset[n].src}@3x.jpg 1400w`);
+    lightboxSrc.setAttribute('srcset', `../../images/webp/${srcset[n].src}@2x.webp 480w, ../../images/webp/${srcset[n].src}@3x.webp 700w, ../../images/webp/${srcset[n].src}@4x.webp 1400w`);
+    lightboxImg.setAttribute('srcset', `../../images/webp/${srcset[n].src}@2x.jpg 480w, ../../images/${srcset[n].src}@3x.jpg 700w, ../../images/webp/${srcset[n].src}@4x.jpg 1400w`);
     lightboxImg.setAttribute('src', `../../images/webp/${srcset[n].src}@2x.jpg`);
     lightboxImg.setAttribute('alt', srcset[n].alt)
     // display index
