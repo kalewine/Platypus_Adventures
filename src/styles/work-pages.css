@@ -12,7 +12,6 @@
     align-items: center;
     height: 350px;
     width: 100%;
-    /* border: blue solid; */
 }
 
 .tri__left {
@@ -61,7 +60,6 @@
     justify-content: center;
     align-items: center;
     padding: 2rem 1rem 4rem 3rem;
-    /* border: solid blue; */
 }
 
 .tri__center-header {
@@ -88,7 +86,6 @@
     align-items: center;
     width: 25%;
     height: 100%;
-    /* border: solid red */
 }
 
 #platypus {
@@ -170,7 +167,6 @@
     width: 100%;
     max-width: 600px;
     min-width: 400px;
-    /* border: solid green; */
 }
 
 
@@ -230,7 +226,6 @@
     grid-auto-flow: row;
     grid-auto-rows: auto;
     place-items: center;
-    /* border: orchid solid; */
 }
 
 .tri-sponsors__sponsor-mn, .tri-sponsors__sponsor-lg, .tri-sponsors__sponsor-sm {

@@ -1,3 +1,34 @@
+// Hero image carousel 
+// const heroSrcset = {
+//     0: {
+//         src: '',
+//         alt: ''
+//     }, 
+//     1: {
+//         src: '',
+//         alt: ''
+//     }
+// }
+
+// const webpHomeImg = document.getElementById('home-img-webp');
+// const homeImg = document.getElementById('home-img');
+
+// const changeHero = () => {
+//     webpHomeImg.setAttribute('srcset', `images/webp/athlete-rides-red-bike-helped-by-buddies@1x.webp 500w,
+//         images/webp/athlete-rides-red-bike-helped-by-buddies@2x.webp 768w,
+//         images/webp/athlete-rides-red-bike-helped-by-buddies@3x.webp 1400w,
+//         images/webp/athlete-rides-red-bike-helped-by-buddies@4x.webp 1920w`);
+//     homeImg.setAttribute('srcset', `images/athlete-rides-red-bike-helped-by-buddies@1x.jpg 500w,
+//     images/athlete-rides-red-bike-helped-by-buddies@2x.jpg 768w,
+//     images/athlete-rides-red-bike-helped-by-buddies@3x.jpg 1400w,
+//     images/athlete-rides-red-bike-helped-by-buddies@4x.jpg 1920w`)
+//     homeImg.setAttribute('src', 'images/athlete-in-wheelchair-finishes-race@4x.jpg')
+//     setTimeout(changeHero, 3000);
+// }
+
+// setTimeout(changeHero, 3000);
+
+// Story slider
 const stories = document.getElementsByClassName("story__slider-card");
 const storyContainer = document.getElementById('story-slider');
 const storyScreen = document.getElementById('story-screen');

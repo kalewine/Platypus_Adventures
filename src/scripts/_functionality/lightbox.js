@@ -1,7 +1,7 @@
 const srcset = {
     0: {
-        src: 'tri-my-best-runner-and-buddies-approach-finishline',
-        alt: 'tri my best athlete and buddies run towards finishline'
+        src: 'tri-my-best-buddies-celebrate-as-runner-crosses-finishline',
+        alt: 'tri my best buddies celebrate as runner crosses finishline'
     }, 
     1: {
         src: 'tri-my-best-biker-red-helmet-smiles', 
@@ -28,20 +28,20 @@ const srcset = {
         alt: 'tri my best swimmer holds onto pool wall'
     },
     7: {
-        src: 'tri-my-best-runner-triumphantly-crosses-finishline',
-        alt: 'tri my best runner triumphantly crosses finishline'
-    },
-    8: {
         src: 'tri-my-best-participant-poses-with-mom-and-dad',
         alt: 'tri my best participant poses with mom and dad'
+    },
+    8: {
+        src: 'tri-my-best-swimmer-in-red-innertube-with-swim-helper',
+        alt: 'tri my best swimmer in red innertube with swim helper'
     },
     9: {
         src: 'tri-my-best-buddies-assist-participant-to-finishline',
         alt: 'tri my best buddies assist participant to finishline'
     },
     10: {
-        src: 'tri-my-best-runner-with-buddies-pushes-to-the-finishline',
-        alt: 'tri my best runner with buddies pushes to the finishline'
+        src: 'tri-my-best-runner-triumphantly-crosses-finishline',
+        alt: 'tri my best runner triumphantly crosses finishline'
     },
     11: {
         src: 'tri-my-best-biker-bikes-beside-buddy',

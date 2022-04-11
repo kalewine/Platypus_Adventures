@@ -41,7 +41,6 @@ header {
     position: relative;
     height: auto;
     width: 100%;
-    /* border: solid 2px blue; */
 }
 
 /* Button styles */
@@ -129,7 +128,6 @@ header {
     height: auto;
     z-index: 1;
     overflow: hidden;
-    /* border: solid blue; */
 }
 
 .header__waves {
@@ -148,7 +146,6 @@ header {
     justify-content: center;
     align-items: center;
     padding-bottom: 0.5rem;
-    /* border: solid green; */
 }
 
 #header-waves {
@@ -259,7 +256,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: red solid; */
 }
 
 .divider__text {
@@ -293,7 +289,6 @@ header {
     width: 100%;
     padding:1rem 0;
     margin: 1rem 0 2rem 0;
-    /* border: orangered solid; */
 }
 
 .supporters__link{
@@ -310,7 +305,6 @@ header {
     font-size: 1.1rem;
     text-align: center;
     padding: 2rem 0;
-    /* border: solid pink 2px; */
 }
 
 .supporters__flex {
@@ -319,8 +313,6 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 1.5rem 0;
-    /* border: blue solid; */
-
 }
 
 
@@ -336,7 +328,6 @@ header {
     .supporters__flex {
         flex-direction: column;
         width: 100%;
-        /* border: blue solid; */
     }
 
     #bottom-sponsor{

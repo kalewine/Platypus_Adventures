@@ -7,7 +7,6 @@
     top: 0;
     left: 0;
     z-index: 2;
-    /* border: solid orangered; */
 }
 
 .nav__container {
@@ -21,7 +20,6 @@
     background-color: #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: all 150ms ease;
-    /* border: solid purple; */
 }
 
 
@@ -42,7 +40,6 @@
     background-color: #fff;
     border-radius: 100%;
     transition: all 150ms ease;
-    /* border: solid magenta */
 }
 
 #shadow-logo {
@@ -69,7 +66,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* border: solid chartreuse; */
 }
 
 .nav__list {
@@ -79,7 +75,6 @@
     display: flex;
     align-items: center;
     list-style: none;
-    /* border: solid purple; */
 }
  
 .nav__list-item {
@@ -91,7 +86,6 @@
     padding: 1rem 0;
     height: 100%;
     transition: all 150ms ease;
-    /* border: solid salmon; */
 }
 
 .nav__list-link::before {
@@ -122,7 +116,6 @@
 .nav__buttons {
     display: flex;
     align-items: center;
-    /* border: solid slateblue; */
 }
 
 .mobile-nav__list-item{
@@ -368,7 +361,6 @@
         top: 0;
         left: -2px;
         z-index: 10;
-        /* border: solid red; */
     }
 
     .nav__logo {

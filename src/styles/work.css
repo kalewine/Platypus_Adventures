@@ -27,7 +27,6 @@
     font-family: var(--body-font);
     padding: 1rem;
     width: 25%;
-    /* border: solid green; */
 }
 
 .work__title {
@@ -44,12 +43,10 @@
     width: 75%;
     display: flex;
     justify-content: space-between;
-    /* border: solid green; */
 }
 .work__img-container {
     width: 33%;
     height: auto;
-    /* border: solid 2px red; */
 }
 
 .work__img {
