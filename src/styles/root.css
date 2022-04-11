@@ -157,7 +157,8 @@ header {
 
 .waves__paragraph {
     max-width: 550px;
-    padding: 0.5rem 0 0.8rem 0;
+    margin-top: -0.5rem;
+    padding: 0rem 0 1rem 0;
     font-family: var(--body-font);
 }
 
@@ -265,24 +266,23 @@ header {
     font-family: var(--header-font);
     font-size: 1.5rem;
     font-weight: 400;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     padding-top: 0.5rem;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 
 @media only screen  and (max-width: 481px){ 
     .divider__content {
-        max-width: 70%;
+        max-width: 80%;
         padding: 2rem 0;
     }
     .divider__text {
         font-family: var(--header-font);
         font-size: 1.2rem;
-        /* margin-bottom: 1rem; */
+        margin-bottom: 1rem;
     }
-
 }
 
 /* Supporters Section */
