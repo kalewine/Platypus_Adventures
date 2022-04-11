@@ -81,14 +81,6 @@ class PlatypusNavbar extends HTMLElement {
             <div class="nav__buttons">
                 <a href="https://paypal.me/platypusadventures?country.x=US&locale.x=en_US" class="button " id="desktop-donate-btn">Donate</a>
                 <a id="triggerId"><img class="nav__btn-access" src="../../images/webp/accessibility_icon.webp"></a>
-                <script>
-                    (function(d){
-                    var s = d.createElement("script");
-                    s.setAttribute("data-trigger", "triggerId")
-                    s.setAttribute("data-account", "9DBXMzwRHL");
-                    s.setAttribute("src", "https://cdn.userway.org/widget.js");
-                    (d.body || d.head).appendChild(s);})(document)
-                </script>
             <noscript>
             Please ensure Javascript is enabled for purposes of 
             <a href="https://userway.org">website accessibility</a>

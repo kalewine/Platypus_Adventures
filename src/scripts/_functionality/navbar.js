@@ -93,3 +93,10 @@ const toggleDropdown = (toggleIcon, id) => {
     })
 }
 
+// Accessibility plugin
+(function(d){
+    var s = d.createElement("script");
+    s.setAttribute("data-trigger", "triggerId")
+    s.setAttribute("data-account", "9DBXMzwRHL");
+    s.setAttribute("src", "https://cdn.userway.org/widget.js");
+    (d.body || d.head).appendChild(s);})(document)
