@@ -110,15 +110,12 @@ const openLightbox = (n) => {
 }
 
 const changeImage = (dir) => {
-    console.log(dir)
-    console.log(currentImage)
     let newImage = (currentImage) + dir;
     if(newImage == 0){
         newImage = length
     }else if(newImage == length + 1){
         newImage = 1
     }
-    console.log(newImage)
     displayImg(newImage-1)
 }
 

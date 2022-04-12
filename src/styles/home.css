@@ -63,14 +63,18 @@
         height: 55vh;
         margin-top: 3rem;
     }
-    .img-slider img {
-        height: 100%;
-    }
+    
 
     .img-slider__arrow-background {
         padding: 0 1.2rem;
     }
 
+}
+
+@media only screen and (max-width: 640px){
+    .img-slider img {
+        height: 100%;
+    }
 }
 
 @media only screen and (max-width: 540px){
