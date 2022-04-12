@@ -11,7 +11,8 @@
 
 .img-slider img {
     width: 100%;
-    object-fit: fill;
+    height: 100%;
+    object-fit: cover;
 }
 
 .slider__arrows {
@@ -61,7 +62,7 @@
 
 @media only screen  and (max-width: 1025px){ 
     .img-slider {
-        height: 45vh;
+        height: 55vh;
         margin-top: 3rem;
     }
 
