@@ -219,6 +219,10 @@ header {
     .intro__title {
          font-size: 1.2rem;
      } 
+
+     .intro-text {
+         padding: 0 0.2rem;
+     }
  
  }
  

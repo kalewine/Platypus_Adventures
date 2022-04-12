@@ -4,14 +4,12 @@
     width: 100%;
     height: 90vh;
     min-height: 400px;
-    margin-top: 1rem;
+    margin-top: 3rem;
     overflow: hidden;
-    /* border: solid red; */
 }
 
 .img-slider img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -65,6 +63,9 @@
         height: 55vh;
         margin-top: 3rem;
     }
+    .img-slider img {
+        height: 100%;
+    }
 
     .img-slider__arrow-background {
         padding: 0 1.2rem;
@@ -72,24 +73,11 @@
 
 }
 
-@media only screen and (max-width: 481px){
+@media only screen and (max-width: 540px){
     .img-slider {
         margin-top: 4rem;
         height: 50vh;
-        min-height: 100px;
     }
-
-
-    .img-slider img {
-       height: 100%; 
-       width: auto;
-       margin-left: -30%;
-    }
-
-    #home-img {
-        margin-left: -15%;
-        
-    } 
 
     #stories-img{
         margin-left: -10%;
