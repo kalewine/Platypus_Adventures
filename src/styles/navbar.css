@@ -319,7 +319,7 @@
     }
 
     .nav__list-link:hover::before, .nav__dropdown-link:hover::before{
-        visibility: hidden; 
+        /* visibility: hidden;  */
     }
 
     .nav__list-item {
@@ -417,6 +417,10 @@
         width: 100%;
         max-width: 100%; 
         min-width: 100%;   
+    }
+
+    .nav__list-link:hover::before, .nav__dropdown-link:hover::before{
+        visibility: hidden; 
     }
     
    
