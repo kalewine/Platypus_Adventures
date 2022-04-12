@@ -392,7 +392,7 @@
 
 .lightbox__img {
     width: auto;
-    max-height: 500px;
+    max-height: 70vh;
 }
 
 
@@ -407,9 +407,9 @@
           display: flex;
       }
 }
+
 @media only screen  and (max-width: 640px){
     .thumbnails {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
     }
-
 }
