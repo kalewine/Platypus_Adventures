@@ -132,7 +132,7 @@
 
     .volunteer__main-header {
         margin-top: 1rem;
-        width: 100%;
+        width:  98%;
         text-align: center;
     }
 
@@ -175,7 +175,7 @@
     }
     
     .volunteer__info {
-        width: 85%;
+        width: 95%;
         margin: 0;
         z-index: 0;
         background-color: #fff;
@@ -188,7 +188,6 @@
     
     .volunteer__info-text {
         font-size: 0.8rem;
-        margin-left: 1rem;
         text-align: left;
     }
 }

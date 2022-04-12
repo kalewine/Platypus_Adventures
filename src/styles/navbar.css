@@ -302,6 +302,9 @@
         margin: 0 1rem 0 0;
     }
 
+    .nav__list-link:hover::before{
+        visibility: hidden;
+    }
 
     .nav__list-item {
         font-size: 1rem;
@@ -331,6 +334,11 @@
 
     #involved-shadow.scrolled {
         height: 9.25rem;
+    }
+
+    .nav__dropdown-link:hover {
+        background-color: #fff;
+        font-weight: 600;
     }
 
 }
@@ -367,8 +375,6 @@
         height: 100%;
     }
 
-    
-    
     .nav__list {
         position: relative;
         top: 0;
@@ -539,10 +545,6 @@
         visibility: hidden; 
     }
 
-    .nav__list-link:hover::before{
-        visibility: hidden; 
-        transform: scaleX(1);
-    }
     
     .nav__dropdown { 
         display: none;
@@ -609,7 +611,6 @@
         height: 92%;
         margin-left: 1rem;
     }
-    
 
 }
 

@@ -120,6 +120,10 @@
 }
 
 @media only screen  and (max-width: 1024px){ 
+    .home-section__title {
+        margin-top: 0;
+    }
+
     .home-section {
         margin-bottom: 2rem;
     }
@@ -214,6 +218,10 @@
         align-items: center;
     }
 
+    #top-adventure {
+        margin-bottom: 4rem;
+    }
+
     #bottom-adventure{
         flex-direction: column-reverse;
     }
@@ -225,9 +233,10 @@
         text-align: center;
         margin-left: 0;
     }
-
+    
     .adventures__img-container{
         width: 60%;
+        margin-bottom: 0.5rem;
     }
 
     .adventures__btn-container{
@@ -237,9 +246,12 @@
  }
 
  @media only screen  and (max-width: 481px){ 
+    .adventures__flex {
+        margin: 1rem auto 2rem auto;
+    }
+
     .adventures__img-container{
         width: 90%;
-    
     }
  }
 
