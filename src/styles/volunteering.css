@@ -12,11 +12,13 @@
 }
 
 .volunteer__main-header{
-    width: 90%;
+    width: 100%;
+    text-align: center;
     max-width: 800px;
     font-family: var(--header-font);
     font-weight: 500;
     font-size: 1.4rem;
+    padding: 2rem 0 1rem 0;
 }
 
 .volunteer__card {
@@ -28,7 +30,7 @@
     border-radius: 70px;
     background-color: #fff;
     border: 1px solid var(--shadow);
-    margin: 1.5rem 0 0.5rem 0;
+    margin: 1rem 0 1rem 0;
 }
 
 .volunteer__card-content {

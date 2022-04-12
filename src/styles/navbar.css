@@ -352,10 +352,6 @@
         height: 9.25rem;
     }
 
-    .nav__dropdown-link:hover {
-        background-color: #fff;
-        font-weight: 600;
-    }
 
 }
 
@@ -405,6 +401,7 @@
         transition: transform 500ms ease;
     }
 
+    
     .nav__list-item {
         text-align: left;
         display: flex;
@@ -416,6 +413,12 @@
         height: auto;
         transition: border-bottom 200ms ease 500ms;
     }
+    .nav__dropdown-item {
+        width: 100%;
+        max-width: 100%; 
+        min-width: 100%;   
+    }
+    
    
     .nav__buttons {
         position: absolute;
