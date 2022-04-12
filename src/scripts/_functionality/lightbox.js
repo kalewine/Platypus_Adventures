@@ -130,6 +130,7 @@ const displayImg = (n) => {
     currentImage = n + 1;
     let index = document.getElementById('lightbox-index');
     index.textContent = `${currentImage}\/${length}`;
+    
 }
 
 const closeLightbox = () => {
@@ -138,4 +139,14 @@ const closeLightbox = () => {
     document.body.style.position = '';
     document.body.style.top =``;
     window.scrollTo(0, parseInt(scrollY || '0') * -1);
+}
+
+
+const listenToClose = (event) => {
+    if(
+        !event.target.closest('.lightbox__arrow') 
+        || event.target.matches('#close-lightbox')
+        ){
+        closeLightbox()
+    }
 }

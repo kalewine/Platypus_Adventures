@@ -134,9 +134,9 @@
                 <img class="thumbnail" onclick="openLightbox(23)" src="../../images/tri-my-best-particpant-rides-on-buddys-back@1x.jpg" alt="tri my best participant rides on buddy\'s back">
             </picture>
         </section>
-        <section id="lightbox">
+        <section id="lightbox" onclick="listenToClose(event)">
            <div id="lightbox-positioner">
-                <img id="close-lightbox" onclick="closeLightbox()" src="../../images/yellow-x.svg" alt="yellow 'x' icon">
+                <img id="close-lightbox" src="../../images/yellow-x.svg" alt="yellow 'x' icon">
                 <img  class="slider__arrow lightbox__arrow" onclick='changeImage(-1)' src="../../images/left-yellow-arrow.svg" alt="chunky left yellow arrow">
                 <picture class="lightbox__img-container" >
                     <source id="lightbox-source" type="image/webp"
