@@ -54,19 +54,22 @@
 }
 
 #waves-intro {
-    /* display: none; */
     margin-top: -10%;
 }
 
 @media only screen  and (max-width: 1025px){ 
     .img-slider {
-        height: 55vh;
+        height: 45vh;
         margin-top: 3rem;
     }
     
 
     .img-slider__arrow-background {
         padding: 0 1.2rem;
+    }
+
+    #waves-intro {
+        margin-top: -15%;
     }
 
 }
