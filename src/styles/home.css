@@ -125,6 +125,7 @@
 /* Adventures Section */
 .adventures__flex {
     width: 75%;
+    max-width: 1200px;
     height: auto;
     margin: 2rem auto;
     padding: 1rem;

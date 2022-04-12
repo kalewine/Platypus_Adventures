@@ -341,7 +341,6 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    /* top: 0; */
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
@@ -398,7 +397,6 @@
 
 
 @media only screen  and (max-width: 1024px){
-
     .lightbox__arrow {
         display: none;
       }
