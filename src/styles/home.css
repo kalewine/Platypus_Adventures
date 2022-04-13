@@ -101,7 +101,6 @@
 
 
 
-
 /* Home section styles */
 .home-section {
     width: 100%;
@@ -112,7 +111,7 @@
     text-align: center;
     font-size: 1.5rem;
     font-family: var(--header-font);
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 @media only screen  and (max-width: 1024px){ 
@@ -142,6 +141,7 @@
 }
 
 
+
 .adventures__content{
     width: 40%;
     display: flex;
@@ -164,6 +164,7 @@
     opacity: 0;
     transition: opacity 200ms ease;
 }
+
 
 
 .adventures__text{
@@ -272,6 +273,14 @@
  @media only screen  and (max-width: 481px){ 
     .adventures__flex {
         margin: 1rem auto 2rem auto;
+    }
+
+    #top-adventure {
+        margin-top: 2rem;
+    }
+
+    .adventures__text {
+        max-width: 350px;
     }
 
     .adventures__img-container{
