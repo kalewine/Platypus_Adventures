@@ -79,3 +79,28 @@ const changeDot = (selectedDot) => {
     currentIndex = dotNumber + 1;
     storyContainer.style.transform = `translateX(${shiftBy}px)`;
 }
+
+// On scroll animations
+const adventures = document.querySelectorAll('.adventure');
+const fromLeft = document.querySelectorAll("from-left")
+const slideInOptions = {
+    threshold: 0, 
+    rootMargin: "0px 0px -200px 0px"
+};
+
+const slideInObserver = new IntersectionObserver((entries, slideInObserver) => {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting){
+            return
+        }else if (entry.isIntersecting){
+            entry.target.classList.add('slide-in')
+        }
+        slideInObserver.unobserve(entry.target);
+    })
+}, slideInOptions);
+
+adventures.forEach(adventure => {
+    slideInObserver.observe(adventure)
+})
+
+
