@@ -11,10 +11,10 @@ class PlatypusNavbar extends HTMLElement {
             <!-- MENU -->
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list" id="nav-list">
-                    <li class="nav__list-item ">
+                    <li class="nav__list-item" onmouseover="calcShadow('work')">
                         <div class="nav__toggle-positioner">
                             <a href="/platypus-work/" class="nav__list-link ">Our Work</a> 
-                            <div class="nav__dropdown-toggle" onclick="toggleDropdown(this, 'work')">
+                            <div class="nav__dropdown-toggle" onclick="toggleMobileDropdown(this, 'work')">
                                 <img class="nav__dropdown-toggle-icon"  src="../../images/open_menu_icon.png"  />
                             </div>
                         </div>
@@ -32,10 +32,10 @@ class PlatypusNavbar extends HTMLElement {
                             </div>
                         </div>
                     </li>
-                    <li class="nav__list-item ">
+                    <li class="nav__list-item" onmouseover="calcShadow('about')">
                         <div class="nav__toggle-positioner">
                             <a href="/about-platypus-adventures/" class="nav__list-link ">About Us</a>  
-                            <div class="nav__dropdown-toggle"onclick="toggleDropdown(this, 'about')">
+                            <div class="nav__dropdown-toggle"onclick="toggleMobileDropdown(this, 'about')">
                                 <img class="nav__dropdown-toggle-icon"  src="../../images/open_menu_icon.png"  />
                             </div>
                         </div>
@@ -43,12 +43,12 @@ class PlatypusNavbar extends HTMLElement {
                             <li class="nav__dropdown-item"><a href="/about-platypus-adventures/mission-and-values" class="nav__dropdown-link ">Our Mission and Values</a></li>
                             <li class="nav__dropdown-item"><a href="/about-platypus-adventures/platypus-leadership" class="nav__dropdown-link ">Our Leadership</a></li> 
                         </ul>
-                        <div class="nav__dropdown-shadow" id="about-shadow"></div>
+                        <div class="nav__dropdown-shadow" id='about-shadow'></div>
                     </li>
-                    <li class="nav__list-item ">
+                    <li class="nav__list-item" onmouseover="calcShadow('involved')">
                         <div class="nav__toggle-positioner">
                             <a href="/get-involved/" class="nav__list-link ">Get Involved</a>
-                            <div class="nav__dropdown-toggle"onclick="toggleDropdown(this, 'involved')">
+                            <div class="nav__dropdown-toggle"onclick="toggleMobileDropdown(this, 'involved')">
                                 <img class="nav__dropdown-toggle-icon" src="../../images/open_menu_icon.png"  />
                             </div>
                         </div>

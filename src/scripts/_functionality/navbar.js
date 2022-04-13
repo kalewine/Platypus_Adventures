@@ -78,7 +78,7 @@ const toggleMenu = () => {
 }
 
 // toggle mobile menu dropdowns
-const toggleDropdown = (toggleIcon, id) => {
+const toggleMobileDropdown = (toggleIcon, id) => {
     toggleIcon.children[0].classList.toggle('is-open')
     document.getElementById(id ).classList.toggle('is-open')
     Array.from(navDropdown).forEach(item => {
@@ -100,3 +100,10 @@ const toggleDropdown = (toggleIcon, id) => {
     s.setAttribute("data-account", "9DBXMzwRHL");
     s.setAttribute("src", "https://cdn.userway.org/widget.js");
     (d.body || d.head).appendChild(s);})(document)
+
+const calcShadow = (hovered) => {
+    let menu = document.getElementById(hovered);
+    const menuShadow = document.getElementById(`${hovered}-shadow`)
+    const height = menu.offsetHeight;
+    menuShadow.style.height = `${height}px`;
+}

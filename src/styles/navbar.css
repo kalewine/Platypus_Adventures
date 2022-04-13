@@ -187,17 +187,6 @@
     z-index: -5;
 }
 
-#work-shadow {
-    height: 7rem;
-}
-
-#about-shadow {
-    height: 9rem;
-}
-
-#involved-shadow {
-    height: 10rem;
-}
 
 .nav__list-item:hover .nav__dropdown  {
     display: flex;
@@ -283,18 +272,6 @@
     font-size: 0.8rem;
 }
 
-#work-shadow.scrolled {
-    height: 6rem;
-}
-
-
- #about-shadow.scrolled {
-     height: 8rem;
- }
-
- #involved-shadow.scrolled {
-     height: 9rem;
- }
 
 @media only screen  and (max-width: 1024px){
     #desktop-donate-btn {
@@ -331,26 +308,6 @@
         width: 7rem;
     }
 
-    
-    #about-shadow {
-        height: 12rem;
-    }
-
-    #about-shadow.scrolled {
-        height: 9rem;
-    }
-
-    #work-shadow.scrolled {
-        height: 6rem;
-    }
-
-    #involved-shadow{
-        height: 10rem;
-    }
-
-    #involved-shadow.scrolled {
-        height: 9.25rem;
-    }
 
 
 }
