@@ -92,9 +92,13 @@
 #platypus {
     padding-right: 1rem;
 }
+.tri__logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .tri__logo{
-    max-height: 300px;
     width: 80%;
 }
 
