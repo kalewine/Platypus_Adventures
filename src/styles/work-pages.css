@@ -414,3 +414,14 @@
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
     }
 }
+
+
+@media (orientation: landscape) {
+    .lightbox__arrow {
+        display: flex;
+      }
+      
+      .mobile-arrow {
+          display: none;
+      }
+}
