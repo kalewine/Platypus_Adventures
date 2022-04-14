@@ -136,6 +136,7 @@
 /* Adventures Section */
 #adventures-section{
     overflow-x: hidden;
+    margin-bottom: 0;
 }
 
 .adventures__flex {
@@ -228,7 +229,8 @@
 
     .adventures__flex {
         width: 85%;
-        padding: 2rem;
+        padding: 1rem;
+        margin: 1rem auto;
     }
 
 
