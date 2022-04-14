@@ -216,10 +216,6 @@
     opacity: 1;
 }
 
-/* .from-right.slide-in {
-    transform: translateX(0);
-    opacity: 1;
-} */
 
 @media only screen  and (max-width: 1024px){ 
     .home-section__title {
@@ -239,6 +235,15 @@
  }
 
  @media only screen  and (max-width: 700px){
+    .from-left {
+        transform: translateX(0%);
+    }
+    
+    
+    .from-right {
+        transform: translateX(0%);
+    }
+    
     .adventures__flex {
         padding: 0;
         width: 100%;

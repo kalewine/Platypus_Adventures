@@ -85,7 +85,7 @@ const adventures = document.querySelectorAll('.adventure');
 const fromLeft = document.querySelectorAll("from-left")
 const slideInOptions = {
     threshold: 0, 
-    rootMargin: "0px 0px -200px 0px"
+    rootMargin: "0px 0px -100px 0px"
 };
 
 const slideInObserver = new IntersectionObserver((entries, slideInObserver) => {
