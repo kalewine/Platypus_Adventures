@@ -506,16 +506,11 @@
 
     .story__arrows-background {
         position: absolute;
-        /* border: 1px solid #989898;
-        box-shadow: 0px 6px 0px #989898;
-        background-color: #fff;
-        border-radius: 100%; */
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* cursor: pointer; */
         z-index: 1;
     }
 
@@ -525,9 +520,6 @@
         transform: translateY(6px);
     }
 
-    .slider__arrow {
-        height: 100%;
-    }
 
     .slider__arrow:hover {
         transform: scale(1);
@@ -558,6 +550,7 @@
 
     .story__slider-arrow {
         display: block;
+        height: 100%;
     }
 
     .slider__arrow-mobile {

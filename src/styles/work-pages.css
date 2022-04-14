@@ -410,6 +410,7 @@
       
       .mobile-arrow {
           display: flex;
+          filter: drop-shadow(0px 4px 0px var(--btn-shadow-color));
       }
 }
 
@@ -423,6 +424,7 @@
 @media (orientation: landscape) {
     .lightbox__arrow {
         display: flex;
+        filter: drop-shadow(0px 4px 0px var(--btn-shadow-color));
       }
       
       .mobile-arrow {
