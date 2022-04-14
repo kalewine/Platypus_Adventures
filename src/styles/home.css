@@ -112,6 +112,12 @@
     font-size: 1.5rem;
     font-family: var(--header-font);
     margin-top: 2rem;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.home-section__title.slide-in{
+    opacity: 1;
 }
 
 @media only screen  and (max-width: 1024px){ 
@@ -161,10 +167,8 @@
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    opacity: 0;
     transition: opacity 200ms ease;
 }
-
 
 
 .adventures__text{
