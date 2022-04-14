@@ -482,8 +482,8 @@
     }
 
     #list-item-donate{
-        margin-top: 2rem;
-        padding: 2rem 0;
+        margin-top: 1rem;
+        padding: 2rem 0 1.5rem 0;
     }
 
     #mobile-donate-btn{
@@ -498,7 +498,7 @@
     #mobile-social-btns {
         justify-content: space-around;
         flex-direction: row;
-        padding: 2rem 0.5rem;
+        padding: 1.5rem 0.5rem;
     }
 
     .nav__dropdown-toggle {
