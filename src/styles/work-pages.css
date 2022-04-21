@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     width: 25%;
-    height: 150%;
+    height: 200%;
     margin: -15% 0;
 }
 
@@ -60,6 +60,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
     padding: 2rem 1rem 4rem 3rem;
 }
 
@@ -81,6 +82,24 @@
     max-width: 550px;
 }
 
+.surya {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--body-font);
+    max-width: 550px;
+    margin-top: 1rem;
+}
+
+.surya__logo {
+    max-height: 200px;
+}
+
+.surya__text{
+    margin-left: 1rem;
+    padding-right: 0.5rem;
+}
+
 .tri__right {
     display: flex;
     justify-content: center;
@@ -91,7 +110,9 @@
 
 #platypus {
     padding-right: 1rem;
+    
 }
+
 .tri__logo-container {
     display: flex;
     justify-content: center;
@@ -100,9 +121,10 @@
 
 .tri__logo{
     width: 80%;
+    max-height: 350px;
 }
 
-@media only screen  and (max-width: 600px){
+@media only screen  and (max-width: 740px){
     .tri {
         flex-direction: column-reverse;
         height: auto;
@@ -127,6 +149,15 @@
 
     .tri__center-subheader {
         margin: 0 0 1rem 0;
+    }
+
+    .surya {
+        flex-direction: column;
+    }
+
+    .surya__text{
+        padding-top: 1rem;
+        text-align: center;
     }
 
     .tri__right{

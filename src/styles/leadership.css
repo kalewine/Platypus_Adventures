@@ -23,6 +23,12 @@
     margin-bottom: 1.5rem;
 }
 
+#no-image {
+    border: solid 1px gray;
+    height: 20vw;
+    width: 20vw;
+}
+
 .leader__name {
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
@@ -39,5 +45,10 @@
         margin-left: 0rem;
         font-size: 0.8rem;
     }
-    
+
+    #no-image {
+        height: 60vw;
+        width: 60vw;
+    }
+
 }
