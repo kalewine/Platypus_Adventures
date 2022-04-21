@@ -93,6 +93,11 @@
 
 .surya__logo {
     max-height: 200px;
+    transition: transform 200ms ease;
+}
+
+.surya__logo:hover {
+transform: scale(1.07);
 }
 
 .surya__text{
