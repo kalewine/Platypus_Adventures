@@ -206,5 +206,11 @@
     #footer-contact {
         margin-top: 1rem;
     }
+
+    .social-btn__mobile {
+        padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+        font-size: 1rem;
+        box-shadow: 0px 4px 0px var(--shadow);
+    }
     
 }

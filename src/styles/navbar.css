@@ -369,7 +369,9 @@
         width: 100%;
         height: auto;
         transition: border-bottom 200ms ease 500ms;
+        padding: 0;
     }
+
     .nav__dropdown-item {
         width: 100%;
         max-width: 100%; 
@@ -426,7 +428,7 @@
     }
 
     #toggle-btn.is-active .mobile-nav__toggle-bar:nth-child(1) {
-        transform: translateY(7px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
     }
 
     #toggle-btn.is-active .mobile-nav__toggle-bar:nth-child(3) {
@@ -487,8 +489,8 @@
     }
 
     #mobile-donate-btn{
-        height: 4.5rem;
-        width: 10rem;
+        height: 3rem;
+        width: 8rem;
         margin: 0;
         padding: 2rem;
         font-size: 1.6rem;
