@@ -417,7 +417,7 @@
         display: block;
         width: 30px; 
         height: 4px; 
-        margin: 1.8px auto;
+        margin: 1.5px auto;
         transition: all 300ms ease-in-out;
         background: var(--purple);
         border-radius: 5px;
@@ -428,11 +428,11 @@
     }
 
     #toggle-btn.is-active .mobile-nav__toggle-bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(7px) rotate(45deg);
     }
 
     #toggle-btn.is-active .mobile-nav__toggle-bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-7px) rotate(-45deg);
     }
     
     .nav__menu {
