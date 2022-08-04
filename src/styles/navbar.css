@@ -187,14 +187,27 @@
     z-index: -5;
 }
 
+.openSubMenu {
+    display: flex;
+}
 
-.nav__list-item:hover .nav__dropdown  {
+
+/* .nav__list-item:hover  .nav__dropdown  {
+    display: flex;
+}
+
+.nav__list-item:focus  .nav__dropdown  {
     display: flex;
 }
 
 .nav__list-item:hover .nav__dropdown-shadow  {
     display: flex;
 }
+
+.nav__list-item:focus .nav__dropdown-shadow  {
+    display: flex;
+} */
+
 
 .nav__dropdown-item {
     position:relative;

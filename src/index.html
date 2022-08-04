@@ -21,11 +21,11 @@
              <!-- IMG SLIDER ARROWS -->
             <!-- <div class="slider__arrows" id="img-slider-arrows">
                 <div class="img-slider__arrow-background" id="left-arrow">
-                    <img class="slider__arrow img-slider__arrow" src="./images/left-yellow-arrow.svg">
+                    <img class="slider__arrow img-slider__arrow" src="./images/left-yellow-arrow.svg" alt="yellow arrow to the left">
                 </div>
                     
                 <div class="img-slider__arrow-background" id="right-arrow">
-                    <img class="slider__arrow img-slider__arrow" src="./images/right-yellow-arrow.svg">
+                    <img class="slider__arrow img-slider__arrow" src="./images/right-yellow-arrow.svg" alt="yellow arrow to the right">
                 </div> 
             </div> -->
             <picture class="img-slider__img">
@@ -118,7 +118,8 @@
                         images/platypus-yoga@2x.jpg 700w"
                         sizes="(max-width: 480px) 90vw, 50vw"
                         src="images/platypus-yoga.jpg" 
-                        alt="yoga particpants stand smiling at the camera after class">
+                        alt="yoga particpants stand smiling at the camera after class"
+                    >
                 </picture>
                
             </div>
@@ -135,9 +136,9 @@
         <section class="home-section" id="story-slider-section">
             <h2 class="home-section__title">Our Stories</h2>
             <div class="story__arrows-positioner" id="desktop-story-arrows">
-                <div class="story__arrows-background" id="previous-story-background" onclick="changeStory(1)">
-                    <img class="slider__arrow story__slider-arrow" id="previous-story" src="./images/left-green-arrow.svg">
-                </div>
+                <button aria-label="left arrow" class="story__arrows-background" id="previous-story-background" onclick="changeStory(1)">
+                    <img class="slider__arrow story__slider-arrow" id="previous-story" src="./images/left-green-arrow.svg" alt="green arrow pointing to the left">
+                </button>
             <div class="story__slider-screen" id="story-screen">
                     <div class="story__slider-container" id="story-slider">
                         <div class="story__slider-card">
@@ -162,9 +163,9 @@
                         <article class="story__slider-content">
                             <h3 class="story__slider-title">Cohen's Turn to Race</h3>
                         
-                            <img id="left-quote" src="/images/left-quote.svg" alt="">
+                            <img id="left-quote" src="/images/left-quote.svg" alt="large black left quotation mark">
                             <p class="story__slider-text">Emily McGowan and her husband, Chris, have attended plenty of cross country meets for their oldest son, Cort, and soccer matches for their daughter, Laine, in recent years. <br/><br/> Saturday it was time for Cohen – their middle child – to have his turn.</p>
-                            <img id="right-quote" src="/images/right-quote.svg" alt="">
+                            <img id="right-quote" src="/images/right-quote.svg" alt="large black right quotation mark">
                             
                             <a class="button button__green" id="story-slider-btn" href="/platypus-stories#cohen">Read Cohen's Story</a> 
                         </article>
@@ -192,9 +193,9 @@
                 <article class="story__slider-content">
                     <h3 class="story__slider-title">Addison's Achievement</h3>
                 
-                    <img id="left-quote" src="/images/left-quote.svg" alt="">
+                    <img id="left-quote" src="/images/left-quote.svg" alt="large black left quotation mark">
                     <p class="story__slider-text">Our goal was to help Addison complete her first triathlon. None of us knew all that it would take to make that happen. After months of dedicated support and working with Therapy 360 they helped us not only prepare for the triathlon but provided her with what she needed to make that happen.</p>
-                    <img id="right-quote" src="/images/right-quote.svg" alt="">
+                    <img id="right-quote" src="/images/right-quote.svg" alt="large black right quotation mark">
                     
                     <a class="button button__green" id="story-slider-btn" href="/platypus-stories#addison">Read Addison's Story</a> 
                 </article>
@@ -224,25 +225,25 @@
             <article class="story__slider-content">
                     <h3 class="story__slider-title">Grant's Milestone</h3>
                 
-                    <img id="left-quote" src="/images/left-quote.svg" alt="">
+                    <img id="left-quote" src="/images/left-quote.svg" alt="large black left quotation mark">
                     <p class="story__slider-text">When you have children the milestones seem like they are never going to happen, yet they're happening all around you with everyone else?  But when you finally hit those milestones you wonder where did that time go? That is this moment today.</p>
-                    <img id="right-quote" src="/images/right-quote.svg" alt="">
+                    <img id="right-quote" src="/images/right-quote.svg" alt="large black right quotation mark">
                     
                     <a class="button button__green" id="story-slider-btn" href="/platypus-stories#grant">Read Grant's Story</a> 
                 </article>
                 </div>
             </div>
             </div>
-            <div class="story__arrows-background" id="next-story-background" onclick="changeStory(-1)">
-                <img class="slider__arrow story__slider-arrow" id="next-story"  src="./images/right-green-arrow.svg">
-            </div>
+            <button aria-label="right arrow" class="story__arrows-background" id="next-story-background" onclick="changeStory(-1)">
+                <img class="slider__arrow story__slider-arrow" id="next-story"  src="./images/right-green-arrow.svg" alt="green arrow pointing to the right">
+            </button>
             </div> 
             <div class="story__indicators">
-                <img class="slider__arrow slider__arrow-mobile" onclick="changeStory(1)" src="./images/left-green-arrow.svg">
-                <span class="story__indicators-dot filled" onclick="changeDot(this)"></span>
-                <span class="story__indicators-dot" onclick="changeDot(this)"></span>
-                <span class="story__indicators-dot" onclick="changeDot(this)"></span>
-                <img class="slider__arrow slider__arrow-mobile" onclick="changeStory(-1)" src="./images/right-green-arrow.svg">
+                <img class="slider__arrow slider__arrow-mobile" onclick="changeStory(1)" src="./images/left-green-arrow.svg" alt="green arrow pointing to the left">
+                <button tabindex="0" aria-label="dot select" class="story__indicators-dot filled" onclick="changeDot(this)"></button>
+                <button tabindex="0" aria-label="dot select" class="story__indicators-dot" onclick="changeDot(this)"></button>
+                <button tabindex="0" aria-label="dot select" class="story__indicators-dot" onclick="changeDot(this)"></button>
+                <img class="slider__arrow slider__arrow-mobile" onclick="changeStory(-1)" src="./images/right-green-arrow.svg" alt="green arrow pointing to the right">
             </div>
         </section>
         <!-- DONATE DIVIDER GREEN/PURPLE -->

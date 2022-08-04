@@ -17,6 +17,21 @@ const aboutShadow = document.getElementById('about-shadow');
 
 const dropdownToggle = document.getElementsByClassName('nav__dropdown-toggle-icon');
 
+
+// toggle submenus
+const openSubMenu = (submenu) => {
+    let subMenu = document.getElementById(submenu);
+    let subMenuShadow = document.getElementById(`${submenu}-shadow`)
+    subMenu.classList.add('openSubMenu');
+    subMenuShadow.classList.add('openSubMenu');
+}
+
+const closeSubMenu = (submenu) => {
+    let subMenu = document.getElementById(submenu);
+    let subMenuShadow = document.getElementById(`${submenu}-shadow`)
+    subMenu.classList.remove('openSubMenu');
+    subMenuShadow.classList.remove('openSubMenu');
+}
 // navbar shink/grow on scroll
 const addScrolled = [logo, shadowLogo, desktopDonate, workShadow, involvedShadow, aboutShadow]
 

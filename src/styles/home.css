@@ -310,6 +310,12 @@
 
 
  /* Story Section */
+
+ button.story__arrows-background{
+    background-color: var(--white);
+    border: initial;
+ }
+
 #story-slider-section{
     display: flex; 
     flex-direction: column;

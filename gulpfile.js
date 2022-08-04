@@ -65,10 +65,17 @@ let browsersyncServe = (cb) => {
     cb();
 }
 
+gulp.task('serve', () => {
+    browsersyncServe;
+    
+})
+
 let browsersyncReload = (cb) => {
     browsersync.reload();
     cb();
 }
+
+
 
 // Watch task
 gulp.task('watchTask', () => {
