@@ -46,6 +46,7 @@ class WavesDivider extends HTMLElement {
         const bkgdColor = this.getAttribute('background-color');
         const btnColor = this.getAttribute('button-color');
         const link = this.getAttribute('link');
+        const disabled = this.getAttribute('disabled') ?? false;
 
         const wavesTopCrests = document.createElement('img');
         wavesTopCrests.setAttribute('class', 'waves__crests top-waves');
@@ -70,8 +71,14 @@ class WavesDivider extends HTMLElement {
 
         const dividerBtn = document.createElement('a');
         dividerBtn.setAttribute('href', `${link}`);
+        if (disabled) {
+            dividerBtn.setAttribute('class', `button button__${btnColor}`);
+        } else {
+            dividerBtn.setAttribute('class', `button disabled`);
+        }
         dividerBtn.setAttribute('class', `button button__${btnColor}`);
-        dividerBtn.textContent = this.getAttribute('btn-text')
+        dividerBtn.textContent = this.getAttribute('btn-text');
+       
 
         wavesContent.appendChild(dividerText);
         if(this.hasAttribute('divider-paragraph')){
