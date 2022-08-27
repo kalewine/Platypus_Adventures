@@ -46,7 +46,7 @@ class WavesDivider extends HTMLElement {
         const bkgdColor = this.getAttribute('background-color');
         const btnColor = this.getAttribute('button-color');
         const link = this.getAttribute('link');
-        const disabled = this.getAttribute('disabled') ?? false;
+        const disabled = this.getAttribute('disabled');
 
         const wavesTopCrests = document.createElement('img');
         wavesTopCrests.setAttribute('class', 'waves__crests top-waves');

@@ -92,8 +92,6 @@ header {
 }
 
 .disabled {
-    background-color: var(--grey);
-    --btn-shadow-color: var(--dark-grey);
     pointer-events: none;
 }
 
@@ -111,6 +109,11 @@ header {
 .button__green {
     background-color: var(--green);
     --btn-shadow-color: var(--dark-green);
+}
+
+.button__gray {
+    background-color: var(--dark-grey);
+    font-style: italic;
 }
 
 
