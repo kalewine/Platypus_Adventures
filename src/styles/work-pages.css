@@ -44,6 +44,7 @@
     text-align: center;
     font-weight: 600;
     padding: 0.3rem;
+    width: 80%;
 }
 
 .tri__left-text a{
@@ -80,29 +81,6 @@
 .tri__center-text {
     font-family: var(--body-font);
     max-width: 550px;
-}
-
-.surya {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: var(--body-font);
-    max-width: 550px;
-    margin-top: 1rem;
-}
-
-.surya__logo {
-    max-height: 200px;
-    transition: transform 200ms ease;
-}
-
-.surya__logo:hover {
-transform: scale(1.07);
-}
-
-.surya__text{
-    margin-left: 1rem;
-    padding-right: 0.5rem;
 }
 
 .tri__right {
@@ -156,14 +134,8 @@ transform: scale(1.07);
         margin: 0 0 1rem 0;
     }
 
-    .surya {
-        flex-direction: column;
-    }
 
-    .surya__text{
-        padding-top: 1rem;
-        text-align: center;
-    }
+ 
 
     .tri__right{
         order: 3;
