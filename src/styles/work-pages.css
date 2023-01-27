@@ -284,20 +284,26 @@ transform: scale(1.07);
     height: auto;
 }
 
-#little-white-house, #little-white-house-logo {
-    justify-self: flex-start;
-    width: 225px;
-}
 
-
-#gfl {
-    justify-self: flex-end;
-    width: 200px;
+.tri-sponsors__sponsor-lg {
+   width: 275px;
 }
 
 .tri-sponsors__sponsor-sm {
     max-width: 175px; 
     height: auto;
+}
+
+#little-white-house, #little-white-house-logo {
+    justify-self: flex-start;
+}
+
+#residue {
+    grid-column: 3/4;
+}
+
+#resource {
+    grid-column: 5/6;
 }
 
 @media only screen  and (max-width: 1024px){
@@ -309,10 +315,6 @@ transform: scale(1.07);
         width: 140px;
     } 
 
-    #gfl {
-        justify-self: center;
-        width: 140px;
-    }
 
     #little-white-house, #little-white-house-logo {
        grid-row: 2;
@@ -320,8 +322,15 @@ transform: scale(1.07);
        width: 160px;
     }
 
-    #last-sponsor{
-        grid-column: span 3;
+  
+    #residue {
+        grid-column: auto;
+        margin-left: 100%;
+    }
+    
+    #resource {
+        grid-column: auto;
+        margin-left: 100%;
     }
 }
 
@@ -342,8 +351,8 @@ transform: scale(1.07);
         width: 200px;
     }
 
-    #last-sponsor{
-        grid-column: span 2;
+    #residue {
+        margin-left: 0;
     }
 
   
