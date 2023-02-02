@@ -16,7 +16,7 @@ class PlatypusFooter extends HTMLElement{connectedCallback(){this.innerHTML=`  <
                </div>
                 <div id="footer-contact">
                     <h3 class="footer__title">Contact Us</h3>
-                    <a class="footer__link" href="mailto: info@platypusadventures.org">info@platypusadventures.org</a>
+                    <a class="footer__link" href="mailto: platypusadventuresgvl@gmail.com">platypusadventuresgvl@gmail.com</a>
                 </div>
             </div>
         <div class="footer__col">
