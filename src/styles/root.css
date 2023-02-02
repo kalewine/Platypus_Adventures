@@ -21,6 +21,8 @@
     --yellow-hover: #fafba9;
     --dark-yellow: #D8C519;
     --shadow: #c4c4c4;
+    --grey: #c4c4c4;
+    --dark-grey: #9d9d9d;
 }
 
 a {
@@ -89,6 +91,10 @@ header {
     transform: translateY(9px);
 }
 
+.disabled {
+    pointer-events: none;
+}
+
 .button__blue {
     background-color: var(--blue);
     --btn-shadow-color: var(--dark-blue);
@@ -103,6 +109,11 @@ header {
 .button__green {
     background-color: var(--green);
     --btn-shadow-color: var(--dark-green);
+}
+
+.button__gray {
+    background-color: var(--dark-grey);
+    font-style: italic;
 }
 
 
