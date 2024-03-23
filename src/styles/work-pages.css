@@ -271,11 +271,20 @@
 }
 
 #residue {
-    grid-column: 3/4;
+    grid-column: 2/4;
+    grid-row: 2;
+    margin-right: 70px;
 }
 
 #resource {
     grid-column: 5/6;
+}
+
+
+#publix {
+    grid-column: 3/5;
+    margin-left: 70px;
+    grid-row: 2;
 }
 
 @media only screen  and (max-width: 1024px){
@@ -297,12 +306,19 @@
   
     #residue {
         grid-column: auto;
-        margin-left: 100%;
+        margin: 0;
+        grid-row: auto;
     }
     
     #resource {
         grid-column: auto;
         margin-left: 100%;
+    }
+
+    #publix {
+        grid-column: auto;
+        margin: 0;
+        grid-row: auto;
     }
 }
 
@@ -322,12 +338,6 @@
         grid-row: 1;
         width: 200px;
     }
-
-    #residue {
-        margin-left: 0;
-    }
-
-  
 }
 
 /* Tri My Best Lightbox */

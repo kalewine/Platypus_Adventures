@@ -149,6 +149,10 @@
     max-height: 400px;
 }
 
+#donate-swim-img {
+    transform: translateY(-50px);
+}
+
 .donate-cards__card a {
     color: #000;
 }

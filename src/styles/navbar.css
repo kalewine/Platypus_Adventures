@@ -230,6 +230,10 @@
     color: var(--purple);
 }
 
+.hidden {
+    display: none;
+}
+
 .nav__dropdown-link::before {
     content: ""; 
     position: absolute; 
