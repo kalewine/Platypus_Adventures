@@ -81,7 +81,7 @@ class PlatypusNavbar extends HTMLElement {
                     </li>
                     <!-- MOBILE BUTTONS -->
                     <li class="nav__list-item mobile-nav__list-item" id="list-item-donate">
-                        <a href="https://paypal.me/platypusadventures?country.x=US&locale.x=en_US" class="button" id="mobile-donate-btn">Donate</a>
+                        <a href="https://www.zeffy.com/donation-form/tri-my-best--2025" class="button" id="mobile-donate-btn">Donate</a>
                     </li>
                     <li class="nav__list-item mobile-nav__list-item" id="mobile-social-btns">
                             <a href="https://www.instagram.com/platypusadventuresgvl/" target="_blank" rel="noopener" class="social-btn social-btn__mobile">
@@ -99,7 +99,7 @@ class PlatypusNavbar extends HTMLElement {
             </div>
             <!-- DESKTOP BUTTONS -->
             <div class="nav__buttons">
-                <a href="https://paypal.me/platypusadventures?country.x=US&locale.x=en_US" class="button " id="desktop-donate-btn">Donate</a>
+                <a href="https://www.zeffy.com/donation-form/tri-my-best--2025" class="button " id="desktop-donate-btn">Donate</a>
                 <a id="triggerId" tabindex="0"><img class="nav__btn-access" src="../../images/webp/accessibility_icon.webp" alt="userway accessibility icon"></a>
             <noscript>
             Please ensure Javascript is enabled for purposes of 
