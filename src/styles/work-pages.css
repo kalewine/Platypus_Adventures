@@ -351,6 +351,7 @@
     grid-auto-flow: row;
     place-items: center;
     margin: 1rem 0.6rem 2rem 0.6rem;
+    width: 100%;
 }
 
 
