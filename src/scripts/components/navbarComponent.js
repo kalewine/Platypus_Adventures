@@ -28,6 +28,7 @@ class PlatypusNavbar extends HTMLElement {
                         <ul class="nav__dropdown" id="work">
                             <li  class="nav__dropdown-item"><a href="/platypus-work/tri-my-best" class="nav__dropdown-link">Tri My Best</a></li>
                             <li  class="nav__dropdown-item" onfocusout="closeSubMenu('work')"><a href="/platypus-work/platypus-yoga" class="nav__dropdown-link hidden" >Yoga</a></li> 
+                            <li  class="nav__dropdown-item" onfocusout="closeSubMenu('work')"><a href="/platypus-work/tri-my-way" class="nav__dropdown-link" >Tri My Way</a></li> 
                         </ul>
                         <div class="nav__dropdown-shadow" id="work-shadow"></div>
                     </li>
