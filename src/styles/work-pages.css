@@ -338,6 +338,10 @@
         grid-row: 1;
         width: 200px;
     }
+
+    #last-sponsor {
+        grid-column: span 2;
+    }
 }
 
 /* Tri My Best Lightbox */
