@@ -28,6 +28,10 @@
     background-color: var(--yellow);
 }
 
+#junkyard-info{
+    background-color: var(--green);
+}
+
 #tri-my-way-info{
     background-color: var(--yellow);
 }
