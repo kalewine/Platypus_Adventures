@@ -292,12 +292,13 @@
 
  @media only screen  and (max-width: 481px){ 
     .adventures__flex {
-        margin: 1rem auto 2rem auto;
+        margin: 1rem auto 4rem auto;
     }
 
     #top-adventure {
         margin-top: 2rem;
     }
+
 
     .adventures__text {
         max-width: 350px;
