@@ -190,15 +190,17 @@
     min-width: 220px;
 }
 
-
-
 .benefits__title {
     margin-bottom: 2rem;
 }
 
+.benefits__item {
+    padding-bottom: 1rem;
+}
+
 
 .benefits ul li {
-    list-style: circle;
+    list-style: none;
     margin-left: 2rem;
 }
 
@@ -214,6 +216,14 @@
 }
 
 @media only screen  and (max-width: 740px){
+    .benefits__text {
+        padding: 1rem 1.5rem 1rem 0.5rem;
+        margin-left: 2rem;
+        width: 100%;
+        max-width: 600px;
+        min-width: 220px;
+    }
+
     .benefits__img {
         min-width: 250px;
     }
@@ -296,6 +306,10 @@
 }
 
 @media only screen  and (max-width: 1024px){
+    .tri-sponsors {
+        margin-top: 2rem
+    }
+
     .tri-sponsors__grid {
         grid-template-columns: repeat(3, minmax(140px, 1fr)); 
     }
